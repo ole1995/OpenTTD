@@ -1514,8 +1514,33 @@ static void AircraftEventHandler_InHangar(Aircraft *v, const AirportFTAClass *ap
 /*  Only Airplanes do the pushback. */
 static void AircraftEventHandler_Backup(Aircraft *v, const AirportFTAClass *apc)
 {
-	v->state = TAKEOFF;
+	/* airport-road is free. We either have to go to another airport, or to the hangar
+	* ---> start moving */
 
+	bool go_to_hangar = false;
+	switch (v->current_order.GetType()) {
+	case OT_GOTO_STATION: // ready to fly to another airport
+		break;
+	case OT_GOTO_DEPOT:   // visit hangar for servicing, sale, etc.
+		go_to_hangar = v->current_order.GetDestination() == v->targetairport;
+		break;
+	case OT_CONDITIONAL:
+		/* In case of a conditional order we just have to wait a tick
+		* longer, so the conditional order can actually be processed;
+		* we should not clear the order as that makes us go nowhere. */
+		return;
+	default:  // orders have been deleted (no orders), goto depot and don't bother us
+		v->current_order.Free();
+		go_to_hangar = Station::Get(v->targetairport)->airport.HasHangar();
+	}
+
+	if (go_to_hangar) {
+		v->state = HANGAR;
+	}
+	else {
+		/* airplane goto state takeoff, helicopter to helitakeoff */
+		v->state = (v->subtype == AIR_HELICOPTER) ? HELITAKEOFF : TAKEOFF;
+	}
 	AirportMove(v, apc);
 }
 
@@ -1544,26 +1569,6 @@ static void AircraftEventHandler_AtTerminal(Aircraft *v, const AirportFTAClass *
 	/* if the block of the next position is busy, stay put */
 	if (AirportHasBlock(v, &apc->layout[v->pos], apc)) return;
 
-	/* airport-road is free. We either have to go to another airport, or to the hangar
-	 * ---> start moving */
-
-	bool go_to_hangar = false;
-	switch (v->current_order.GetType()) {
-		case OT_GOTO_STATION: // ready to fly to another airport
-			break;
-		case OT_GOTO_DEPOT:   // visit hangar for servicing, sale, etc.
-			go_to_hangar = v->current_order.GetDestination() == v->targetairport;
-			break;
-		case OT_CONDITIONAL:
-			/* In case of a conditional order we just have to wait a tick
-			 * longer, so the conditional order can actually be processed;
-			 * we should not clear the order as that makes us go nowhere. */
-			return;
-		default:  // orders have been deleted (no orders), goto depot and don't bother us
-			v->current_order.Free();
-			go_to_hangar = Station::Get(v->targetairport)->airport.HasHangar();
-	}
-
 	/* If next state is BACKUP, then move back, otherwise proceed as normal. */
 	const AirportFTA *current = &apc->layout[v->pos];
 	const AirportFTA *next = &apc->layout[current->next_position];
@@ -1573,14 +1578,7 @@ static void AircraftEventHandler_AtTerminal(Aircraft *v, const AirportFTAClass *
 		return;
 	}
 
-	// Since we did not backup...  Proceed normally.
-	if (go_to_hangar) {
-		v->state = HANGAR;
-	} else {
-		/* airplane goto state takeoff, helicopter to helitakeoff */
-		v->state = (v->subtype == AIR_HELICOPTER) ? HELITAKEOFF : TAKEOFF;
-	}
-	AirportMove(v, apc);
+	AircraftEventHandler_Backup(v, apc);
 }
 
 static void AircraftEventHandler_General(Aircraft *v, const AirportFTAClass *apc)
