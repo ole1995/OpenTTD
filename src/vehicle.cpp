@@ -1623,6 +1623,24 @@ GetNewVehiclePosResult GetNewVehiclePos(const Vehicle *v)
 	return gp;
 }
 
+GetNewVehiclePosResult GetNewVehiclePosBack(const Vehicle *v)
+{
+	static const int8 _delta_coord[16] = {
+		-1,-1,-1, 0, 1, 1, 1, 0, /* x */
+		-1, 0, 1, 1, 1, 0,-1,-1, /* y */
+		};
+	
+	int x = v->x_pos - _delta_coord[v->direction];
+	int y = v->y_pos - _delta_coord[v->direction + 8];
+	
+	GetNewVehiclePosResult gp;
+	gp.x = x;
+	gp.y = y;
+	gp.old_tile = v->tile;
+	gp.new_tile = TileVirtXY(x, y);
+	return gp;
+}
+
 static const Direction _new_direction_table[] = {
 	DIR_N,  DIR_NW, DIR_W,
 	DIR_NE, DIR_SE, DIR_SW,

@@ -851,7 +851,8 @@ static bool AircraftController(Aircraft *v)
 			rotation = st->airport.rotation;
 			size_x = st->airport.w;
 			size_y = st->airport.h;
-		} else {
+		}
+		else {
 			tile = st->xy;
 		}
 	}
@@ -863,7 +864,8 @@ static bool AircraftController(Aircraft *v)
 		/* Jump into our "holding pattern" state machine if possible */
 		if (v->pos >= afc->nofelements) {
 			v->pos = v->previous_pos = AircraftGetEntryPoint(v, afc, DIR_N);
-		} else if (v->targetairport != v->current_order.GetDestination()) {
+		}
+		else if (v->targetairport != v->current_order.GetDestination()) {
 			/* If not possible, just get out of here fast */
 			v->state = FLYING;
 			UpdateAircraftCache(v);
@@ -892,7 +894,8 @@ static bool AircraftController(Aircraft *v)
 					SndPlayVehicleFx(SND_18_HELICOPTER, v);
 				}
 			}
-		} else {
+		}
+		else {
 			u->cur_speed = 32;
 			count = UpdateAircraftSpeed(v);
 			if (count > 0) {
@@ -936,12 +939,14 @@ static bool AircraftController(Aircraft *v)
 			/*  Increase speed of rotors. When speed is 80, we've landed. */
 			if (u->cur_speed >= 80) return true;
 			u->cur_speed += 4;
-		} else {
+		}
+		else {
 			count = UpdateAircraftSpeed(v);
 			if (count > 0) {
 				if (v->z_pos > z) {
 					SetAircraftPosition(v, v->x_pos, v->y_pos, max(v->z_pos - count, z));
-				} else {
+				}
+				else {
 					SetAircraftPosition(v, v->x_pos, v->y_pos, min(v->z_pos + count, z));
 				}
 			}
@@ -949,8 +954,25 @@ static bool AircraftController(Aircraft *v)
 		return false;
 	}
 
+	// Used to calculate the offset needed for moving a plane backwards.
+	int xoffset = 0;
+	int yoffset = 0;
+
+	if (v->state == BACKUP)
+		switch (v->direction)
+		{
+			case DIR_N:  xoffset = -4; break;
+			case DIR_S:  yoffset = 4;  break;
+			case DIR_W:  xoffset = 4;  break;
+			case DIR_E:  yoffset = 4;  break;
+			case DIR_NW: yoffset = -4; break;
+			case DIR_SW: xoffset = 4;  break;
+			case DIR_NE: xoffset = -4; break;
+			case DIR_SE: yoffset = 4;  break;
+		}
+
 	/* Get distance from destination pos to current pos. */
-	uint dist = abs(x + amd.x - v->x_pos) +  abs(y + amd.y - v->y_pos);
+	uint dist = abs(x + amd.x - (v->x_pos + xoffset)) +  abs(y + amd.y - (v->y_pos + yoffset));
 
 	/* Need exact position? */
 	if (!(amd.flag & AMED_EXACTPOS) && dist <= (amd.flag & AMED_SLOWTURN ? 8U : 4U)) return true;
@@ -1013,7 +1035,7 @@ static bool AircraftController(Aircraft *v)
 
 			/* Turn. Do it slowly if in the air. */
 			Direction newdir = GetDirectionTowards(v, x + amd.x, y + amd.y);
-			if (newdir != v->direction) {
+			if (newdir != v->direction && v->state != BACKUP) {
 				if (amd.flag & AMED_SLOWTURN && v->number_consecutive_turns < 8 && v->subtype == AIR_AIRCRAFT) {
 					if (v->turn_counter == 0 || newdir == v->last_direction) {
 						if (newdir == v->last_direction) {
@@ -1044,7 +1066,10 @@ static bool AircraftController(Aircraft *v)
 			} else {
 				v->number_consecutive_turns = 0;
 				/* Move vehicle. */
-				gp = GetNewVehiclePos(v);
+				if (v->state == BACKUP)
+					gp = GetNewVehiclePosBack(v);
+				else
+					gp = GetNewVehiclePos(v);
 			}
 		}
 
@@ -1485,6 +1510,15 @@ static void AircraftEventHandler_InHangar(Aircraft *v, const AirportFTAClass *ap
 	AirportMove(v, apc);
 }
 
+/** Push back from terminal */
+/*  Only Airplanes do the pushback. */
+static void AircraftEventHandler_Backup(Aircraft *v, const AirportFTAClass *apc)
+{
+	v->state = TAKEOFF;
+
+	AirportMove(v, apc);
+}
+
 /** At one of the Airport's Terminals */
 static void AircraftEventHandler_AtTerminal(Aircraft *v, const AirportFTAClass *apc)
 {
@@ -1530,6 +1564,16 @@ static void AircraftEventHandler_AtTerminal(Aircraft *v, const AirportFTAClass *
 			go_to_hangar = Station::Get(v->targetairport)->airport.HasHangar();
 	}
 
+	/* If next state is BACKUP, then move back, otherwise proceed as normal. */
+	const AirportFTA *current = &apc->layout[v->pos];
+	const AirportFTA *next = &apc->layout[current->next_position];
+	if (next->heading == BACKUP && v->subtype == AIR_AIRCRAFT) {
+		v->state = BACKUP;
+		AirportMove(v, apc);
+		return;
+	}
+
+	// Since we did not backup...  Proceed normally.
 	if (go_to_hangar) {
 		v->state = HANGAR;
 	} else {
@@ -1699,6 +1743,7 @@ static AircraftStateHandler * const _aircraft_state_handlers[] = {
 	AircraftEventHandler_AtTerminal,     // TERM7          = 19
 	AircraftEventHandler_AtTerminal,     // TERM8          = 20
 	AircraftEventHandler_AtTerminal,     // HELIPAD3       = 21
+	AircraftEventHandler_Backup,         // BACKUP         = 22
 };
 
 static void AirportClearBlock(const Aircraft *v, const AirportFTAClass *apc)

@@ -82,7 +82,8 @@ enum AirportMovementStates {
 	TERM7          = 19, ///< Heading for terminal 7.
 	TERM8          = 20, ///< Heading for terminal 8.
 	HELIPAD3       = 21, ///< Heading for helipad 3.
-	MAX_HEADINGS   = 21, ///< Last valid target to head for.
+	BACKUP         = 22, ///< Used to push back from terminal.
+	MAX_HEADINGS   = 22, ///< Last valid target to head for.
 };
 
 /** Movement Blocks on Airports blocks (eg_airport_flags). */
