@@ -542,7 +542,7 @@ CommandCost CmdStartStopVehicle(TileIndex tile, DoCommandFlag flags, uint32 p1, 
 		case VEH_AIRCRAFT: {
 			Aircraft *a = Aircraft::From(v);
 			/* cannot stop airplane when in flight, or when taking off / landing */
-			if (!(v->vehstatus & VS_CRASHED) && a->state >= STARTTAKEOFF && a->state < TERM7) return_cmd_error(STR_ERROR_AIRCRAFT_IS_IN_FLIGHT);
+			if (!(v->vehstatus & VS_CRASHED) && (a->state >= TAKEOFF && a->state <= HELIENDLANDING)) return_cmd_error(STR_ERROR_AIRCRAFT_IS_IN_FLIGHT);
 			break;
 		}
 
