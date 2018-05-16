@@ -128,7 +128,7 @@ static StationID FindNearestHangar(const Aircraft *v)
 	const AircraftVehicleInfo *avi = AircraftVehInfo(v->engine_type);
 
 	FOR_ALL_STATIONS(st) {
-		if (st->owner != v->owner || !(st->facilities & FACIL_AIRPORT)) continue;
+		if ((st->owner ^ v->owner) || (st->owner ^ (v->owner | OWNER_SUB_BEGIN)) || !(st->facilities & FACIL_AIRPORT)) continue;
 
 		const AirportFTAClass *afc = st->airport.GetFTA();
 		if (!st->airport.HasHangar() || (
