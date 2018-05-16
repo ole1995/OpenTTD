@@ -2201,7 +2201,7 @@ static const AirportMovingData _airport_moving_data_oilrig[9] = {
 static const byte _airport_entries_dummy[] = { 0, 1, 2, 3 };
 static const byte _airport_helientry_dummy[] = { 0, 1, 2, 3 };
 static const AirportFTAbuildup _airport_fta_dummy[] = {
-	{ 0, 0, 0, 0, 3 },
+{ 0, 0, 0, 0, 3 },
 { 1, 0, 0, 0, 0 },
 { 2, 0, 0, 0, 1 },
 { 3, 0, 0, 0, 2 },
@@ -2218,7 +2218,7 @@ static const byte _airport_terminal_country[] = { 1, 3 };
 static const byte _airport_entries_country[] = { 6, 5, 8, 7 };
 static const byte _airport_helientry_country[] = { 25, 25, 25, 25 };
 static const AirportFTAbuildup _airport_fta_country[] = {
-	{ 0, HANGAR, 0, 0, 1 },{ 0, 0, 0, 0, 1 },{ 0, HELITAKEOFF, 0, 0, 1 },{ 0, TERM01, 0, 0, 1 },{ 0, TERM02, 0, 0, 1 },{ 0, TERM03, 0, 0, 1 },
+{ 0, HANGAR, 0, 0, 1 },{ 0, 0, 0, 0, 1 },{ 0, HELITAKEOFF, 0, 0, 1 },{ 0, TERM01, 0, 0, 1 },{ 0, TERM02, 0, 0, 1 },{ 0, TERM03, 0, 0, 1 },
 { 1,    255, HANG01_block, 0, 0 },{ 1, HANGAR, 0, 0, 0 },{ 1, TERM01, 0, 0, 2 },{ 1, TERM02, RUNW01_block, 0, 15 },{ 1, TERM03, RUNW01_block, 0, 15 },{ 1, HELITAKEOFF, 0, 0, 19 },{ 1, 0, 0, 0, 15 },
 // Airplane Terminals
 { 2, TERM01, TERM01_block, 0, 14 },{ 2, HELITAKEOFF, 0, 0, 20 },{ 2, HANGAR, HANG01_block, 0, 1 },{ 2, 0, 0, 0, 14 },
@@ -2242,7 +2242,7 @@ static const AirportFTAbuildup _airport_fta_country[] = {
 { 16, TAKEOFF, RUNW01_block, 0,  17 },
 { 17, STARTTAKEOFF, 0, 0, 18 },
 { 18, ENDTAKEOFF, 0, 0, 0 },     //End airplane control
-								 // Helicopter Takeoff
+// Helicopter Takeoff
 { 19, HELITAKEOFF, 0, 0, 0 },
 { 20, HELITAKEOFF, 0, 0, 0 },
 { 21, HELITAKEOFF, 0, 0, 0 },
@@ -2262,8 +2262,8 @@ static const byte _airport_terminal_commuter[] = { 1, 3 };
 static const byte _airport_entries_commuter[] = { 10,  9, 12, 11 };  //{ 12, 11, 10,  9 };
 static const byte _airport_helientry_commuter[] = { 38, 38, 38, 38 };
 static const AirportFTAbuildup _airport_fta_commuter[] = {
-	// Airplane & Helicopter Hangars
-	{ 0, HANGAR, 0, 0, 1 },{ 0, 0, 0, 0, 1 },{ 0, TERM01, 0, 0, 1 },{ 0, TERM02, 0, 0, 1 },{ 0, TERM03, 0, 0, 1 },{ 0, CARG01, 0, 0, 1 },{ 0, CARG02, 0, 0, 1 },{ 0, HELI01, 0, 0, 1 },{ 0, HELI02, 0, 0, 1 },{ 0, HELITAKEOFF, 0, 0, 1 },{ 0, TAKEOFF, 0, 0, 1 },
+// Airplane & Helicopter Hangars
+{ 0, HANGAR, 0, 0, 1 },{ 0, 0, 0, 0, 1 },{ 0, TERM01, 0, 0, 1 },{ 0, TERM02, 0, 0, 1 },{ 0, TERM03, 0, 0, 1 },{ 0, CARG01, 0, 0, 1 },{ 0, CARG02, 0, 0, 1 },{ 0, HELI01, 0, 0, 1 },{ 0, HELI02, 0, 0, 1 },{ 0, HELITAKEOFF, 0, 0, 1 },{ 0, TAKEOFF, 0, 0, 1 },
 { 1, 255, HANG01_block, 0, 0 },{ 1, HANGAR, 0, 0, 0 },{ 1, TAKEOFF, 0, 0, 25 },{ 1, TERM01, 0, TAXI05_block, 24 },{ 1, TERM02, 0, TAXI05_block | TAXI04_block, 24 },{ 1, TERM03, 0, TAXI05_block | TAXI04_block | TAXI03_block, 24 },{ 1, CARG01, 0, TAXI05_block, 24 },{ 1, CARG02, 0, TAXI05_block | TAXI04_block, 24 },{ 1, HELI01, 0, TAXI05_block, 24 },{ 1, HELI02, 0, TAXI05_block | TAXI04_block, 24 },{ 1, HELITAKEOFF, 0, TAXI05_block, 36 },{ 1, 0, 0, 0, 0 },
 // Airplane Terminals
 { 2, TERM01, TERM01_block, 0, 24 },{ 2, 0, 0, 0, 24 },
@@ -2302,7 +2302,7 @@ static const AirportFTAbuildup _airport_fta_commuter[] = {
 { 27, 0, 0, 0, 28 },
 { 28, STARTTAKEOFF, 0, 0, 29 },
 { 29, ENDTAKEOFF, 0, 0, 0 },{ 29, 0, 0, 0, 10 },  // End Airport Control of planes.
-												  // Helicopter position for Helipads
+// Helicopter position for Helipads
 { 30, 0, 0, 0, 32 },
 { 31, 0, 0, 0, 33 },
 // Helicopter Land at Helipads
@@ -2311,9 +2311,9 @@ static const AirportFTAbuildup _airport_fta_commuter[] = {
 // Helicopter Takeoff from Helipads
 { 34, HELITAKEOFF, 0, 0, 0 }, // End Airport Control of helicopters.
 { 35, HELITAKEOFF, 0, 0, 0 }, // End Airport Control of helicopters.
-							  // Helicopter takeoff from Hangar
+// Helicopter takeoff from Hangar
 { 36, HELITAKEOFF, 0, 0, 0 }, // End Airport Control of helicopters.
-							  // Runway01 Entry
+// Runway01 Entry
 { 37, FLYING, 0, 0,  9 },{ 37, LANDING, 0, 0, 17 },{ 37, 0, 0, 0,  9 },
 // Runway01 Entry
 { 38, FLYING, 0, 0, 13 },{ 38, HELILANDING, 0, 0, 13 },{ 38, 0, 0, 0, 13 },
@@ -2327,7 +2327,7 @@ static const byte _airport_terminal_city[] = { 1, 3 };
 static const byte _airport_entries_city[] = { 19, 18, 21, 20 };
 static const byte _airport_helientry_city[] = { 28, 28, 28, 28 };
 static const AirportFTAbuildup _airport_fta_city[] = {
-	{ 0, HANGAR, 0, 0, 1 },{ 0, 0, 0, 0, 1 },{ 0, TERM02, 0, 0, 1 },{ 0, TERM03, 0, 0, 1 },{ 0, TERM01, 0, 0, 1 },
+{ 0, HANGAR, 0, 0, 1 },{ 0, 0, 0, 0, 1 },{ 0, TERM02, 0, 0, 1 },{ 0, TERM03, 0, 0, 1 },{ 0, TERM01, 0, 0, 1 },
 { 1,    255, HANG01_block, 0, 0 },{ 1, HANGAR, 0, 0, 0 },{ 1, TERM02, 0, TAXI03_block, 6 },{ 1, TERM03, 0, TAXI03_block | TAXI04_block, 6 },{ 1, TERM01, 0, TAXI03_block | TAXI02_block, 6 },{ 1, TAKEOFF, 0, TAXI03_block | TAXI02_block | TAXI05_block, 6 },{ 1, HELITAKEOFF, 0, 0, 22 },{ 1, 0, 0, 0, 6 },
 { 2, TERM01, TERM01_block, 0, 7 },{ 2, HANGAR, 0, 0, 7 },{ 2, HELITAKEOFF, 0, 0, 23 },{ 2, TAKEOFF, 0, TAXI02_block | TAXI05_block, 7 },{ 2, 0, 0, 0, 7 },
 { 3, TERM02, TERM02_block, 0, 6 },{ 3, HANGAR, 0, 0, 6 },{ 3, TAKEOFF, 0, TAXI03_block | TAXI02_block | TAXI05_block, 6 },{ 3, HELITAKEOFF, 0, 0, 24 },{ 3, 0, 0, 0, 6 },
@@ -2381,7 +2381,7 @@ static const byte _airport_terminal_metropolitan[] = { 1, 3 };
 static const byte _airport_entries_metropolitan[] = { 20, 19, 22, 21 };
 static const byte _airport_helientry_metropolitan[] = { 29, 29, 29, 29 };
 static const AirportFTAbuildup _airport_fta_metropolitan[] = {
-	{ 0, HANGAR, 0, 0, 1 },{ 0, 0, 0, 0, 1 },{ 0, TERM02, 0, 0, 1 },{ 0, TERM03, 0, 0, 1 },{ 0, TERM01, 0, 0, 1 },
+{ 0, HANGAR, 0, 0, 1 },{ 0, 0, 0, 0, 1 },{ 0, TERM02, 0, 0, 1 },{ 0, TERM03, 0, 0, 1 },{ 0, TERM01, 0, 0, 1 },
 { 1,    255, HANG01_block, 0, 0 },{ 1, HANGAR, 0, 0, 0 },{ 1, TERM02, 0, TAXI03_block, 6 },{ 1, TERM03, 0, TAXI03_block | TAXI04_block, 6 },{ 1, TERM01, 0, TAXI03_block | TAXI02_block, 6 },{ 1, TAKEOFF, 0, TAXI03_block, 6 },{ 1, HELITAKEOFF, 0, 0, 23 },{ 1, 0, 0, 0, 6 },
 { 2, TERM01, TERM01_block, 0, 7 },{ 2, HANGAR, HANG01_block, TAXI02_block | TAXI03_block, 7 },{ 2, TAKEOFF, 0, TAXI02_block | TAXI05_block, 7 },{ 2, HELITAKEOFF, 0, 0, 24 },{ 2, 0, 0, 0, 7 },
 { 3, TERM02, TERM02_block, 0, 6 },{ 3, HANGAR, HANG01_block, TAXI03_block , 6 },{ 3, TAKEOFF, 0, TAXI03_block | TAXI05_block, 6 },{ 3, HELITAKEOFF, 0, 0, 25 },{ 3, 0, 0, 0, 6 },
@@ -2431,8 +2431,8 @@ static const byte _airport_terminal_international[] = { 1, 6 };
 static const byte _airport_entries_international[] = { 15, 14, 17, 16 };
 static const byte _airport_helientry_international[] = { 53, 53, 53, 53 };
 static const AirportFTAbuildup _airport_fta_international[] = {
-	/* Hangars and Outside Hangars */
-	{ 0, HANGAR, 0, 0, 2 },{ 0, 0, 0, 0,  2 },{ 0, TERM01, 0, 0, 2 },{ 0, TERM02, 0, 0, 2 },{ 0, TERM03, 0, 0, 2 },{ 0, TERM04, 0, 0, 2 },{ 0, TERM05, 0, 0, 2 },{ 0, TERM06, 0, 0, 2 },{ 0, HELI01, 0, 0, 2 },{ 0, HELI02, 0, 0, 2 },{ 0, CARG01, 0, 0, 2 },{ 0, CARG02, 0, 0, 2 },
+/* Hangars and Outside Hangars */
+{ 0, HANGAR, 0, 0, 2 },{ 0, 0, 0, 0,  2 },{ 0, TERM01, 0, 0, 2 },{ 0, TERM02, 0, 0, 2 },{ 0, TERM03, 0, 0, 2 },{ 0, TERM04, 0, 0, 2 },{ 0, TERM05, 0, 0, 2 },{ 0, TERM06, 0, 0, 2 },{ 0, HELI01, 0, 0, 2 },{ 0, HELI02, 0, 0, 2 },{ 0, CARG01, 0, 0, 2 },{ 0, CARG02, 0, 0, 2 },
 { 1, HANGAR, 0, 0, 3 },{ 1, 0, 0, 0,  3 },{ 1, TERM04, 0, 0, 3 },{ 1, TERM05, 0, 0, 3 },{ 1, TERM06, 0, 0, 3 },{ 1, HELI01, 0, 0, 3 },{ 1, HELI02, 0, 0, 3 },{ 1, CARG01, 0, 0, 3 },{ 1, CARG02, 0, 0, 3 },
 { 2, 255, HANG01_block, 0, 0 },{ 2, HANGAR, 0, 0, 0 },{ 2, 0, 0, 0, 36 },
 { 3, 255, HANG02_block, 0, 0 },{ 3, HANGAR, 0, 0, 1 },{ 3, TERM04, 0, TAXI10_block, 30 },{ 3, TERM05, 0, TAXI10_block | TAXI09_block, 30 },{ 3, TERM06, 0, TAXI10_block | TAXI09_block | TAXI08_block, 30 },{ 3, HELI01, 0, 0, 12 },{ 3, HELI02, 0, TAXI10_block | TAXI09_block | TAXI08_block, 30 },{ 3, HELITAKEOFF, 0, 0, 12 },{ 3, CARG01, 0, TAXI10_block | TAXI09_block, 30 },{ 3, CARG02, 0, TAXI10_block | TAXI09_block | TAXI08_block, 30 },{ 3, 0, 0, 0, 30 },
@@ -2460,7 +2460,7 @@ static const AirportFTAbuildup _airport_fta_international[] = {
 { 19,     255, RUNW01_block, 0, 20 },{ 19, LANDING, 0, 0, 20 },
 { 20, LANDING, 0, 0, 21 },{ 20, FLYING, 0, 0, 42 },{ 20, 0, 0, 0, 21 },
 { 21, ENDLANDING, 0, TAXI01_block, 22 },{ 21, 0, 0, 0, 22 },{ 21, TERM01, 0, 0, 0 },{ 21, TERM02, 0, 0, 0 },{ 21, TERM03, 0, 0, 0 },{ 21, TERM04, 0, 0, 0 },{ 21, TERM05, 0, 0, 0 },{ 21, TERM06, 0, 0, 0 },{ 21, CARG01, 0, 0, 0 },{ 21, CARG02, 0, 0, 0 }, // This is the format to control ENDLANDING to Terminal
-																																																															 /* Airplane Taxi */
+/* Airplane Taxi */
 { 22, 255, 0, TAXI02_block,  0 },{ 22, HANGAR, 0, 0,  2 },{ 22, TAKEOFF, 0, 0, 36 },{ 22, TERM01, 0, 0, 36 },{ 22, TERM02, 0, 0, 36 },{ 22, TERM03, 0, 0, 36 },{ 22, 0, 0, 0, 23 },
 { 23, 255, 0, TAXI03_block,  0 },{ 23, HANGAR, 0, 0, 36 },{ 23, TERM04, 0, 0,  24 },{ 23, TERM05, 0, 0, 24 },{ 23, TERM06, 0, 0, 24 },{ 23, HELI01, 0, 0, 24 },{ 23, HELI02, 0, 0, 24 },{ 23, HELITAKEOFF, 0, 0, 24 },{ 23, CARG01, 0, 0, 24 },{ 23, CARG02, 0, 0, 24 },{ 23, 0, 0, 0, 36 },
 { 24,   0, 0, TAXI04_block, 25 },
@@ -2485,7 +2485,7 @@ static const AirportFTAbuildup _airport_fta_international[] = {
 { 40, 0, 0, 0, 41 },
 { 41, STARTTAKEOFF, 0, 0, 42 },
 { 42, ENDTAKEOFF, 0, 0, 0 },{ 42, 0, 0, 0, 15 },      //Airplane leaves Airport Control
-													  /* Helicopter - Holding Pattern */
+/* Helicopter - Holding Pattern */
 { 43, HELILANDING, 0, 0, 44 },
 { 44, HELIENDLANDING, 0, 0, 44 },{ 44, HELI02, 0, 0, 46 },{ 44, HELI01, 0, 0, 45 },{ 44, HANGAR, 0, 0, 51 },
 { 45, 0, 0, 0, 47 },
@@ -2512,8 +2512,8 @@ static const byte _airport_terminal_terminus1[] = { 1, 9 };
 static const byte _airport_entries_terminus1[] = { 20, 19, 22, 21 };
 static const byte _airport_helientry_terminus1[] = { 55, 55, 55, 55 };
 static const AirportFTAbuildup _airport_fta_terminus1[] = {
-	// Airplane & Helicopter Hangars
-	{ 0, HANGAR, 0, 0, 2 },{ 0, 0, 0, 0, 2 },{ 0, TERM09, 0, 0, 2 },{ 0, TERM07, 0, 0, 2 },{ 0, TERM05, 0, 0, 2 },{ 0, TERM03, 0, 0, 2 },{ 0, TERM01, 0, 0, 2 },{ 0, TERM08, 0, 0, 2 },{ 0, TERM06, 0, 0, 2 },{ 0, TERM04, 0, 0, 2 },{ 0, TERM02, 0, 0, 2 },{ 0, HELI03, 0, 0, 2 },{ 0, HELI02, 0, 0, 2 },{ 0, HELI01, 0, 0, 2 },{ 0, CARG01, 0, 0, 2 },{ 0, CARG02, 0, 0, 2 },{ 0, CARG03, 0, 0, 2 },
+// Airplane & Helicopter Hangars
+{ 0, HANGAR, 0, 0, 2 },{ 0, 0, 0, 0, 2 },{ 0, TERM09, 0, 0, 2 },{ 0, TERM07, 0, 0, 2 },{ 0, TERM05, 0, 0, 2 },{ 0, TERM03, 0, 0, 2 },{ 0, TERM01, 0, 0, 2 },{ 0, TERM08, 0, 0, 2 },{ 0, TERM06, 0, 0, 2 },{ 0, TERM04, 0, 0, 2 },{ 0, TERM02, 0, 0, 2 },{ 0, HELI03, 0, 0, 2 },{ 0, HELI02, 0, 0, 2 },{ 0, HELI01, 0, 0, 2 },{ 0, CARG01, 0, 0, 2 },{ 0, CARG02, 0, 0, 2 },{ 0, CARG03, 0, 0, 2 },
 { 1, HANGAR, 0, 0, 3 },{ 1, 0, 0, 0, 3 },{ 1, TERM09, 0, 0, 3 },{ 1, TERM08, 0, 0, 3 },{ 1, TERM07, 0, 0, 3 },{ 1, TERM06, 0, 0, 3 },{ 1, HELI03, 0, 0, 3 },{ 1, HELI02, 0, 0, 3 },{ 1, HELI01, 0, 0, 3 },{ 1, CARG03, 0, 0, 3 },{ 1, CARG02, 0, 0, 3 },{ 1, CARG01, 0, 0, 3 },
 { 2, 255, HANG01_block, 0, 0 },{ 2, HANGAR, 0, 0, 0 },{ 2, TERM01 , 0, TAXI05_block | TAXI04_block, 33 },{ 2, 0, 0, 0, 33 },
 { 3, 255, HANG02_block, 0, 0 },{ 3, HANGAR, 0, 0, 1 },{ 3, TERM06, 0, TAXI11_block | TAXI10_block | TAXI09_block, 39 },{ 3, TERM07, 0, TAXI11_block | TAXI10_block, 39 },{ 3, TERM08, 0, TAXI11_block, 39 },{ 3, TERM09, 0, TAXI11_block, 39 },{ 3, HELI01, 0, TAXI11_block | TAXI10_block | TAXI09_block | TAXI08_block | TAXI07_block,  39 },{ 3, HELI02, 0, TAXI11_block | TAXI10_block | TAXI09_block | TAXI08_block,  39 },{ 3, HELI03, 0, TAXI11_block | TAXI10_block | TAXI09_block,  39 },{ 3, CARG01, 0, TAXI11_block | TAXI10_block | TAXI09_block | TAXI08_block | TAXI07_block,  39 },{ 3, CARG02, 0, TAXI11_block | TAXI10_block | TAXI09_block | TAXI08_block,  39 },{ 3, CARG03, 0, TAXI11_block | TAXI10_block | TAXI09_block,  39 },{ 3, TAKEOFF, 0, TAXI13_block, 41 },{ 3, 0, 0, TAXI13_block, 41 },
@@ -2546,7 +2546,7 @@ static const AirportFTAbuildup _airport_fta_terminus1[] = {
 { 25, ENDLANDING, 0, TAXI01_block, 30 },{ 25, 0, 0, 0, 30 },{ 25, TERM09, 0, 0, 0 },{ 25, TERM07, 0, 0, 0 },{ 25, TERM05, 0, 0, 0 },{ 25, TERM03, 0, 0, 0 },{ 25, TERM01, 0, 0, 0 },{ 25, TERM08, 0, 0, 0 },{ 25, TERM06, 0, 0, 0 },{ 25, TERM04, 0, 0, 0 },{ 25, TERM02, 0, 0, 0 },{ 25, CARG01, 0, 0, 0 },{ 25, CARG02, 0, 0, 0 },{ 25, CARG03, 0, 0, 0 },
 { 26, 0, 0, TAXI01_block, 30 },
 // Airplane Landing Runway02
-{ 27,     255, RUNW02_block, TAXI10_block | TAXI11_block | TAXI13_block, 28 },{ 27, LANDING, 0, 0, 28 },
+{ 27,     255, RUNW02_block, TAXI09_block | TAXI10_block | TAXI11_block | TAXI13_block, 28 },{ 27, LANDING, 0, 0, 28 },
 { 28, LANDING, 0, 0, 29 },{ 28, FLYING, 0, 0, 45 },{ 28, 0, 0, 0, 29 },
 { 29, ENDLANDING, 0, TAXI14_block, 30 },{ 29, 0, 0, 0, 30 },{ 29, TERM09, 0, 0, 0 },{ 29, TERM07, 0, 0, 0 },{ 29, TERM05, 0, 0, 0 },{ 29, TERM03, 0, 0, 0 },{ 29, TERM01, 0, 0, 0 },{ 29, TERM08, 0, 0, 0 },{ 29, TERM06, 0, 0, 0 },{ 29, TERM04, 0, 0, 0 },{ 29, TERM02, 0, 0, 0 },{ 29, CARG01, 0, 0, 0 },{ 29, CARG02, 0, 0, 0 },{ 29, CARG03, 0, 0, 0 },
 // End Landing for Runways 1 & 2
@@ -2568,7 +2568,7 @@ static const AirportFTAbuildup _airport_fta_terminus1[] = {
 { 43, 0, 0, 0, 44 },
 { 44, STARTTAKEOFF, 0, 0, 45 },
 { 45, ENDTAKEOFF, 0, 0, 0 },{ 45, 0, 0, 0, 20 },   // End Airport control of airplane.
-												   // Helicopter -- stay in air in special place as a buffer to choose from helipads
+// Helicopter -- stay in air in special place as a buffer to choose from helipads
 { 46, HELILANDING, 0, 0, 47 },{ 46, 0, 0, 0, 47 },
 { 47, HELIENDLANDING, 0, 0, 51 },{ 47, HELI03, 0, 0, 59 },{ 47, HELI01, 0, 0, 57 },{ 47, HELI02, 0, 0, 58 },{ 47, HANGAR, 0, 0, 51 },
 // Helicopter -- takeoff
@@ -2606,8 +2606,8 @@ static const byte _airport_terminal_terminus2[] = { 1, 16 };
 static const byte _airport_entries_terminus2[] = { 37, 36, 39, 38 };
 static const byte _airport_helientry_terminus2[] = { 105, 105, 105, 105 };
 static const AirportFTAbuildup _airport_fta_terminus2[] = {
-	// Airplane & Helicopter Hangars
-	{ 0, HANGAR, 0, 0, 4 },{ 0, 0, 0, 0, 4 },{ 0, TERM07, 0, 0, 4 },{ 0, TERM05, 0, 0, 4 },{ 0, TERM03, 0, 0, 4 },{ 0, TERM01, 0, 0, 4 },{ 0, TERM08, 0, 0, 4 },{ 0, TERM06, 0, 0, 4 },{ 0, TERM04, 0, 0, 4 },{ 0, TERM02, 0, 0, 4 },{ 0, TERM13, 0, 0, 4 },{ 0, TERM14, 0, 0, 4 },{ 0, TERM15, 0, 0, 4 },{ 0, TERM16, 0, 0, 4 },{ 0, HELI01, 0, 0, 4 },{ 0, HELI02, 0, 0, 4 },{ 0, HELI03, 0, 0, 4 },{ 0, CARG01, 0, 0, 4 },{ 0, CARG02, 0, 0, 4 },{ 0, CARG03, 0, 0, 4 },{ 0, CARG05, 0, 0, 4 },{ 0, CARG06, 0, 0, 4 },
+// Airplane & Helicopter Hangars
+{ 0, HANGAR, 0, 0, 4 },{ 0, 0, 0, 0, 4 },{ 0, TERM07, 0, 0, 4 },{ 0, TERM05, 0, 0, 4 },{ 0, TERM03, 0, 0, 4 },{ 0, TERM01, 0, 0, 4 },{ 0, TERM08, 0, 0, 4 },{ 0, TERM06, 0, 0, 4 },{ 0, TERM04, 0, 0, 4 },{ 0, TERM02, 0, 0, 4 },{ 0, TERM13, 0, 0, 4 },{ 0, TERM14, 0, 0, 4 },{ 0, TERM15, 0, 0, 4 },{ 0, TERM16, 0, 0, 4 },{ 0, HELI01, 0, 0, 4 },{ 0, HELI02, 0, 0, 4 },{ 0, HELI03, 0, 0, 4 },{ 0, CARG01, 0, 0, 4 },{ 0, CARG02, 0, 0, 4 },{ 0, CARG03, 0, 0, 4 },{ 0, CARG05, 0, 0, 4 },{ 0, CARG06, 0, 0, 4 },
 { 1, HANGAR, 0, 0, 5 },{ 1, 0, 0, 0, 5 },{ 1, TERM08, 0, 0, 5 },{ 1, TERM07, 0, 0, 5 },{ 1, TERM06, 0, 0, 5 },{ 1, TERM05, 0, 0, 5 },{ 1, HELI03, 0, 0, 5 },{ 1, HELI02, 0, 0, 5 },{ 1, HELI01, 0, 0, 5 },{ 1, CARG03, 0, 0, 5 },{ 1, CARG02, 0, 0, 5 },{ 1, CARG01, 0, 0, 5 },
 { 2, HANGAR, 0, 0, 6 },{ 2, 0, 0, 0, 6 },{ 2, TERM15, 0, 0, 6 },{ 2, TERM13, 0, 0, 6 },{ 2, TERM11, 0, 0, 6 },{ 2, TERM09, 0, 0, 6 },{ 2, TERM16, 0, 0, 6 },{ 2, TERM14, 0, 0, 6 },{ 2, TERM12, 0, 0, 6 },{ 2, TERM10, 0, 0, 6 },{ 2, TERM05, 0, 0, 6 },{ 2, TERM06, 0, 0, 6 },{ 2, TERM07, 0, 0, 6 },{ 2, TERM08, 0, 0, 6 },{ 2, HELI04, 0, 0, 6 },{ 2, HELI05, 0, 0, 6 },{ 2, HELI06, 0, 0, 6 },{ 2, CARG04, 0, 0, 6 },{ 2, CARG05, 0, 0, 6 },{ 2, CARG06, 0, 0, 6 },{ 2, CARG02, 0, 0, 6 },{ 2, CARG03, 0, 0, 6 },
 { 3, HANGAR, 0, 0, 7 },{ 3, 0, 0, 0, 7 },{ 3, TERM16, 0, 0, 7 },{ 3, TERM15, 0, 0, 7 },{ 3, TERM14, 0, 0, 7 },{ 3, TERM13, 0, 0, 7 },{ 3, HELI06, 0, 0, 7 },{ 3, HELI05, 0, 0, 7 },{ 3, HELI04, 0, 0, 7 },{ 3, CARG06, 0, 0, 7 },{ 3, CARG05, 0, 0, 7 },{ 3, CARG04, 0, 0, 7 },
@@ -2663,8 +2663,8 @@ static const AirportFTAbuildup _airport_fta_terminus2[] = {
 { 45, LANDING, 0, 0, 46 },{ 45, FLYING, 0, 0, 106 },{ 45, 0, 0, 0, 46 },
 { 46, ENDLANDING, 0, TAXI01_block, 51 },{ 46, 0, 0, 0, 51 },{ 46, TERM07, 0, 0, 0 },{ 46, TERM05, 0, 0, 0 },{ 46, TERM03, 0, 0, 0 },{ 46, TERM01, 0, 0, 0 },{ 46, TERM08, 0, 0, 0 },{ 46, TERM06, 0, 0, 0 },{ 46, TERM04, 0, 0, 0 },{ 46, TERM02, 0, 0, 0 },{ 46, CARG01, 0, 0, 0 },{ 46, CARG02, 0, 0, 0 },{ 46, CARG03, 0, 0, 0 },
 { 47, 0, 0, TAXI01_block, 51 }, // Unused
-								// Airplane Landing Runway02
-{ 48,     255, RUNW02_block, TAXI10_block | TAXI11_block | TAXI13_block, 49 },{ 48, LANDING, 0, 0, 49 },
+// Airplane Landing Runway02
+{ 48,     255, RUNW02_block, TAXI09_block | TAXI10_block | TAXI11_block | TAXI13_block, 49 },{ 48, LANDING, 0, 0, 49 },
 { 49, LANDING, 0, 0, 50 },{ 49, FLYING, 0, 0, 66 },{ 49, 0, 0, 0, 50 },
 { 50, ENDLANDING, 0, TAXI28_block, 51 },{ 50, 0, 0, 0, 51 },{ 50, TERM07, 0, 0, 0 },{ 50, TERM05, 0, 0, 0 },{ 50, TERM03, 0, 0, 0 },{ 50, TERM01, 0, 0, 0 },{ 50, TERM08, 0, 0, 0 },{ 50, TERM06, 0, 0, 0 },{ 50, TERM04, 0, 0, 0 },{ 50, TERM02, 0, 0, 0 },{ 50, CARG01, 0, 0, 0 },{ 50, CARG02, 0, 0, 0 },{ 50, CARG03, 0, 0, 0 },
 // End Landing for Runways 1 & 2
@@ -2686,7 +2686,7 @@ static const AirportFTAbuildup _airport_fta_terminus2[] = {
 { 64, 0, 0, 0, 65 },
 { 65, STARTTAKEOFF, 0, 0, 66 },
 { 66, ENDTAKEOFF, 0, 0, 0 },{ 66, 0, 0, 0, 37 },   // End Airport control of airplane.
-												   // Helicopter -- takeoff
+// Helicopter -- takeoff
 { 67, HELITAKEOFF, 0, 0, 0 },
 { 68, HELITAKEOFF, 0, 0, 0 },
 { 69, HELITAKEOFF, 0, 0, 0 },
@@ -2697,8 +2697,8 @@ static const AirportFTAbuildup _airport_fta_terminus2[] = {
 { 71, LANDING, 0, 0, 72 },{ 71, FLYING, 0, 0, 107 },{ 71, 0, 0, 0, 72 },
 { 72, ENDLANDING, 0, TAXI14_block, 77 },{ 72, 0, 0, 0, 77 },{ 72, TERM15, 0, 0, 0 },{ 72, TERM13, 0, 0, 0 },{ 72, TERM11, 0, 0, 0 },{ 72, TERM09, 0, 0, 0 },{ 72, TERM16, 0, 0, 0 },{ 72, TERM14, 0, 0, 0 },{ 72, TERM12, 0, 0, 0 },{ 72, TERM10, 0, 0, 0 },{ 72, CARG04, 0, 0, 0 },{ 72, CARG05, 0, 0, 0 },{ 72, CARG06, 0, 0, 0 },
 { 73, 0, 0, TAXI14_block, 77 }, //Unused
-								// Airplane Landing Runway04
-{ 74,     255, RUNW04_block, TAXI23_block | TAXI24_block | TAXI26_block, 75 },{ 74, LANDING, 0, 0, 75 },
+// Airplane Landing Runway04
+{ 74,     255, RUNW04_block, TAXI22_block | TAXI23_block | TAXI24_block | TAXI26_block, 75 },{ 74, LANDING, 0, 0, 75 },
 { 75, LANDING, 0, 0, 76 },{ 75, FLYING, 0, 0, 92 },{ 75, 0, 0, 0, 76 },
 { 76, ENDLANDING, 0, TAXI29_block, 77 },{ 76, 0, 0, 0, 77 },{ 76, TERM15, 0, 0, 0 },{ 76, TERM13, 0, 0, 0 },{ 76, TERM11, 0, 0, 0 },{ 76, TERM09, 0, 0, 0 },{ 76, TERM16, 0, 0, 0 },{ 76, TERM14, 0, 0, 0 },{ 76, TERM12, 0, 0, 0 },{ 76, TERM10, 0, 0, 0 },{ 76, CARG04, 0, 0, 0 },{ 76, CARG05, 0, 0, 0 },{ 76, CARG06, 0, 0, 0 },
 // End Landing for Runways 3 & 4
@@ -2720,7 +2720,7 @@ static const AirportFTAbuildup _airport_fta_terminus2[] = {
 { 90, 0, 0, 0, 91 },
 { 91, STARTTAKEOFF, 0, 0, 92 },
 { 92, ENDTAKEOFF, 0, 0, 0 },{ 92, 0, 0, 0, 39 },   // End Airport control of airplane.
-												   // Helicopter Position for Helipads.
+// Helicopter Position for Helipads.
 { 93, 0, HANG03_block, 0, 94 },
 { 94, 0, 0, 0, 6 },
 // Helicopter -- takeoff
@@ -2771,8 +2771,8 @@ static const byte _airport_terminal_terminus3[] = { 1, 25 };
 static const byte _airport_entries_terminus3[] = { 56, 55, 58, 57 };
 static const byte _airport_helientry_terminus3[] = { 162, 162, 162, 162 };
 static const AirportFTAbuildup _airport_fta_terminus3[] = {
-	// Airplane & Helicopter Hangars
-	{ 0, HANGAR, 0, 0,  6 },{ 0, 0, 0, 0,  6 },{ 0, TERM07, 0, 0,  6 },{ 0, TERM05, 0, 0,  6 },{ 0, TERM03, 0, 0,  6 },{ 0, TERM01, 0, 0,  6 },{ 0, TERM08, 0, 0,  6 },{ 0, TERM06, 0, 0 , 6 },{ 0, TERM04, 0, 0,  6 },{ 0, TERM02, 0, 0,  6 },{ 0, TERM13, 0, 0,  6 },{ 0, TERM23, 0, 0,  6 },{ 0, TERM14, 0, 0,  6 },{ 0, TERM24, 0, 0,  6 },{ 0, TERM15, 0, 0,  6 },{ 0, TERM25, 0, 0,  6 },{ 0, TERM16, 0, 0,  6 },{ 0, HELI01, 0, 0,  6 },{ 0, HELI02, 0, 0, 6 },{ 0, HELI03, 0, 0, 6 },{ 0, CARG01, 0, 0,  6 },{ 0, CARG02, 0, 0, 6 },{ 0, CARG03, 0, 0, 6 },{ 0, CARG05, 0, 0, 6 },{ 0, CARG06, 0, 0, 6 },
+// Airplane & Helicopter Hangars
+{ 0, HANGAR, 0, 0,  6 },{ 0, 0, 0, 0,  6 },{ 0, TERM07, 0, 0,  6 },{ 0, TERM05, 0, 0,  6 },{ 0, TERM03, 0, 0,  6 },{ 0, TERM01, 0, 0,  6 },{ 0, TERM08, 0, 0,  6 },{ 0, TERM06, 0, 0 , 6 },{ 0, TERM04, 0, 0,  6 },{ 0, TERM02, 0, 0,  6 },{ 0, TERM13, 0, 0,  6 },{ 0, TERM23, 0, 0,  6 },{ 0, TERM14, 0, 0,  6 },{ 0, TERM24, 0, 0,  6 },{ 0, TERM15, 0, 0,  6 },{ 0, TERM25, 0, 0,  6 },{ 0, TERM16, 0, 0,  6 },{ 0, HELI01, 0, 0,  6 },{ 0, HELI02, 0, 0, 6 },{ 0, HELI03, 0, 0, 6 },{ 0, CARG01, 0, 0,  6 },{ 0, CARG02, 0, 0, 6 },{ 0, CARG03, 0, 0, 6 },{ 0, CARG05, 0, 0, 6 },{ 0, CARG06, 0, 0, 6 },
 { 1, HANGAR, 0, 0,  7 },{ 1, 0, 0, 0,  7 },{ 1, TERM08, 0, 0,  7 },{ 1, TERM07, 0, 0,  7 },{ 1, TERM06, 0, 0,  7 },{ 1, TERM05, 0, 0,  7 },{ 1, HELI03, 0, 0,  7 },{ 1, HELI02, 0, 0,  7 },{ 1, HELI01, 0, 0,  7 },{ 1, CARG03, 0, 0,  7 },{ 1, CARG02, 0, 0,  7 },{ 1, CARG01, 0, 0,  7 },
 { 2, HANGAR, 0, 0,  8 },{ 2, 0, 0, 0,  8 },{ 2, TERM15, 0, 0,  8 },{ 2, TERM13, 0, 0,  8 },{ 2, TERM11, 0, 0,  8 },{ 2, TERM09, 0, 0,  8 },{ 2, TERM16, 0, 0,  8 },{ 2, TERM14, 0, 0,  8 },{ 2, TERM12, 0, 0 , 8 },{ 2, TERM10, 0, 0,  8 },{ 2, TERM05, 0, 0,  8 },{ 2, TERM20, 0, 0,  8 },{ 2, TERM06, 0, 0,  8 },{ 2, TERM21, 0, 0,  8 },{ 2, TERM07, 0, 0,  8 },{ 2, TERM22, 0, 0,  8 },{ 2, TERM08, 0, 0,  8 },{ 2, HELI04, 0, 0,  8 },{ 2, HELI05, 0, 0, 8 },{ 2, HELI06, 0, 0, 8 },{ 2, CARG04, 0, 0,  8 },{ 2, CARG05, 0, 0, 8 },{ 2, CARG06, 0, 0, 8 },{ 2, CARG07, 0, 0, 8 },{ 2, CARG08, 0, 0, 8 },{ 2, CARG09, 0, 0, 8 },
 { 3, HANGAR, 0, 0,  9 },{ 3, 0, 0, 0,  9 },{ 3, TERM16, 0, 0,  9 },{ 3, TERM15, 0, 0,  9 },{ 3, TERM14, 0, 0,  9 },{ 3, TERM13, 0, 0,  9 },{ 3, HELI06, 0, 0,  9 },{ 3, HELI05, 0, 0,  9 },{ 3, HELI04, 0, 0,  9 },{ 3, CARG07, 0, 0,  9 },{ 3, CARG08, 0, 0,  9 },{ 3, CARG09, 0, 0,  9 },{ 3, CARG06, 0, 0,  9 },{ 3, CARG05, 0, 0,  9 },{ 3, CARG04, 0, 0,  9 },
@@ -2807,9 +2807,9 @@ static const AirportFTAbuildup _airport_fta_terminus3[] = {
 { 31, TERM20, TERM20_block, 0, 131 },{ 31, HANGAR, 0, 0, 131 },{ 31, 0, 0, 0, 131 },
 { 32, TERM21, TERM21_block, 0, 132 },{ 32, HANGAR, 0, 0, 132 },{ 32, 0, 0, 0, 132 },
 { 33, TERM22, TERM22_block, 0, 133 },{ 33, HANGAR, 0, 0, 133 },{ 33, 0, 0, 0, 133 },
-{ 34, TERM23, TERM23_block, 0, 135 },{ 34, HANGAR, 0, 0, 135 },{ 34, 0, 0, 0, 135 },
-{ 35, TERM24, TERM24_block, 0, 136 },{ 35, HANGAR, HANG06_block, TAXI40_block | TAXI41_block, 136 },{ 35, 0, 0, 0, 136 },
-{ 36, TERM25, TERM25_block, 0, 137 },{ 36, HANGAR, HANG06_block, TAXI40_block | TAXI41_block | TAXI42_block, 137 },{ 36, 0, 0, 0, 137 },
+{ 34, TERM23, TERM23_block, 0, 135 },{ 34, HANGAR, HANG06_block, TAXI40_block, 135 },{ 34, 0, 0, 0, 135 },
+{ 35, TERM24, TERM24_block, 0, 136 },{ 35, HANGAR, HANG06_block, TAXI41_block | TAXI44_block, 136 },{ 35, 0, 0, 0, 136 },
+{ 36, TERM25, TERM25_block, 0, 137 },{ 36, HANGAR, HANG06_block, TAXI42_block | TAXI43_block | TAXI44_block, 137 },{ 36, 0, 0, 0, 137 },
 // Cargo Terminals (Uses Helipads)
 { 37, CARG01, CARG01_block, 0,  75 },{ 37, HANGAR, 0, 0,  75 },{ 37, 0, 0, 0,  75 },
 { 38, CARG02, CARG02_block, 0,  76 },{ 38, HANGAR, 0, 0,  76 },{ 38, 0, 0, 0,  76 },
@@ -2847,8 +2847,8 @@ static const AirportFTAbuildup _airport_fta_terminus3[] = {
 { 64, LANDING, 0, 0, 65 },{ 64, FLYING, 0, 0, 163 },{ 64, 0, 0, 0, 65 },
 { 65, ENDLANDING, 0, TAXI01_block, 70 },{ 65, 0, 0, 0, 70 },{ 65, TERM07, 0, 0, 0 },{ 65, TERM05, 0, 0, 0 },{ 65, TERM03, 0, 0, 0 },{ 65, TERM01, 0, 0, 0 },{ 65, TERM08, 0, 0, 0 },{ 65, TERM06, 0, 0, 0 },{ 65, TERM04, 0, 0, 0 },{ 65, TERM02, 0, 0, 0 },{ 65, CARG01, 0, 0, 0 },{ 65, CARG02, 0, 0, 0 },{ 65, CARG03, 0, 0, 0 },
 { 66, 0, 0, TAXI01_block, 70 },  //Unused
-								 // Airplane Landing Runway02
-{ 67,     255, RUNW02_block, TAXI10_block | TAXI11_block | TAXI13_block, 68 },{ 67, LANDING, 0, 0, 68 },
+// Airplane Landing Runway02
+{ 67,     255, RUNW02_block, TAXI09_block | TAXI10_block | TAXI11_block | TAXI13_block, 68 },{ 67, LANDING, 0, 0, 68 },
 { 68, LANDING, 0, 0, 69 },{ 68, FLYING, 0, 0, 85 },{ 68, 0, 0, 0, 69 },
 { 69, ENDLANDING, 0, TAXI47_block, 70 },{ 69, 0, 0, 0, 70 },{ 69, TERM07, 0, 0, 0 },{ 69, TERM05, 0, 0, 0 },{ 69, TERM03, 0, 0, 0 },{ 69, TERM01, 0, 0, 0 },{ 69, TERM08, 0, 0, 0 },{ 69, TERM06, 0, 0, 0 },{ 69, TERM04, 0, 0, 0 },{ 69, TERM02, 0, 0, 0 },{ 69, CARG01, 0, 0, 0 },{ 69, CARG02, 0, 0, 0 },{ 69, CARG03, 0, 0, 0 },
 // End Landing for Runways 1 & 2
@@ -2870,7 +2870,7 @@ static const AirportFTAbuildup _airport_fta_terminus3[] = {
 { 83, 0, 0, 0, 84 },
 { 84, STARTTAKEOFF, 0, 0, 85 },
 { 85, ENDTAKEOFF, 0, 0, 0 },{ 85, 0, 0, 0, 56 },   // End Airport control of airplane.
-												   // Helicopter -- takeoff
+// Helicopter -- takeoff
 { 86, HELITAKEOFF, 0, 0, 0 },
 { 87, HELITAKEOFF, 0, 0, 0 },
 { 88, HELITAKEOFF, 0, 0, 0 },
@@ -2881,8 +2881,8 @@ static const AirportFTAbuildup _airport_fta_terminus3[] = {
 { 90, LANDING, 0, 0, 91 },{ 90, FLYING, 0, 0, 164 },{ 90, 0, 0, 0, 91 },
 { 91, ENDLANDING, 0, TAXI14_block, 96 },{ 91, 0, 0, 0, 96 },{ 91, TERM15, 0, 0, 0 },{ 91, TERM13, 0, 0, 0 },{ 91, TERM11, 0, 0, 0 },{ 91, TERM09, 0, 0, 0 },{ 91, TERM16, 0, 0, 0 },{ 91, TERM14, 0, 0, 0 },{ 91, TERM12, 0, 0, 0 },{ 91, TERM10, 0, 0, 0 },
 { 92, 0, 0, TAXI14_block, 96 }, //Unused
-								// Airplane Landing Runway04
-{ 93,     255, RUNW04_block, TAXI23_block | TAXI24_block | TAXI26_block, 94 },{ 93, LANDING, 0, 0, 94 },
+// Airplane Landing Runway04
+{ 93,     255, RUNW04_block, TAXI22_block | TAXI23_block | TAXI24_block | TAXI26_block, 94 },{ 93, LANDING, 0, 0, 94 },
 { 94, LANDING, 0, 0, 95 },{ 94, FLYING, 0, 0, 111 },{ 94, 0, 0, 0, 95 },
 { 95, ENDLANDING, 0, TAXI48_block, 96 },{ 95, 0, 0, 0, 96 },{ 95, TERM15, 0, 0, 0 },{ 95, TERM13, 0, 0, 0 },{ 95, TERM11, 0, 0, 0 },{ 95, TERM09, 0, 0, 0 },{ 95, TERM16, 0, 0, 0 },{ 95, TERM14, 0, 0, 0 },{ 95, TERM12, 0, 0, 0 },{ 95, TERM10, 0, 0, 0 },
 // End Landing for Runways 3 & 4
@@ -2904,7 +2904,7 @@ static const AirportFTAbuildup _airport_fta_terminus3[] = {
 { 109, 0, 0, 0, 110 },
 { 110, STARTTAKEOFF, 0, 0, 111 },
 { 111, ENDTAKEOFF, 0, 0, 0 },{ 111, 0, 0, 0, 58 },   // End Airport control of airplane.
-													 // Helicopter Position for Helipads.
+// Helicopter Position for Helipads.
 { 112, 0, HANG03_block, 0, 113 },
 { 113, 0, HANG03_block, 0,   8 },
 // Helicopter -- takeoff
@@ -2918,8 +2918,8 @@ static const AirportFTAbuildup _airport_fta_terminus3[] = {
 { 118, LANDING, 0, 0, 119 },{ 118, FLYING, 0, 0,  165 },{ 118, 0, 0, 0, 119 },
 { 119, ENDLANDING, 0, TAXI28_block, 124 },{ 119, 0, 0, 0, 124 },{ 119, TERM25, 0, 0, 0 },{ 119, TERM23, 0, 0, 0 },{ 119, TERM21, 0, 0, 0 },{ 119, TERM19, 0, 0, 0 },{ 119, TERM17, 0, 0, 0 },{ 119, TERM24, 0, 0, 0 },{ 119, TERM22, 0, 0, 0 },{ 119, TERM20, 0, 0, 0 },{ 119, TERM18, 0, 0, 0 },
 { 120, 0, 0, TAXI28_block, 124 }, //Unused
-								  // Airplane Landing Runway06
-{ 121,     255, RUNW06_block, TAXI39_block | TAXI40_block | TAXI43_block | TAXI44_block, 122 },{ 121, LANDING, 0, 0, 122 },
+// Airplane Landing Runway06
+{ 121,     255, RUNW06_block, TAXI38_block | TAXI39_block | TAXI40_block | TAXI43_block | TAXI44_block, 122 },{ 121, LANDING, 0, 0, 122 },
 { 122, LANDING, 0, 0, 123 },{ 122, FLYING, 0, 0, 143 },{ 122, 0, 0, 0, 123 },
 { 123, ENDLANDING, 0, TAXI49_block, 124 },{ 123, 0, 0, 0, 124 },{ 123, TERM25, 0, 0, 0 },{ 123, TERM23, 0, 0, 0 },{ 123, TERM21, 0, 0, 0 },{ 123, TERM19, 0, 0, 0 },{ 123, TERM17, 0, 0, 0 },{ 123, TERM24, 0, 0, 0 },{ 123, TERM22, 0, 0, 0 },{ 123, TERM20, 0, 0, 0 },{ 123, TERM18, 0, 0, 0 },
 // End Landing for Runways 5 & 6
@@ -2936,16 +2936,16 @@ static const AirportFTAbuildup _airport_fta_terminus3[] = {
 { 133, BACKUP, 0, TAXI38_block, 0 },{ 133, TERM22, 0, 0,  33 },{ 133, HELI09, 0, 0,  54 },{ 133, CARG09, 0, 0,  45 },{ 133, HELI08, 0, 0, 132 },{ 133, HELI07, 0, 0, 132 },{ 133, CARG08, 0, 0, 132 },{ 133, CARG07, 0, 0, 132 },{ 133, HELITAKEOFF, 0, 0,  54 },{ 133, 0, 0, 0, 134 },
 { 134,    255, 0, TAXI39_block, 0 },{ 134, HELI07, 0, 0, 133 },{ 134, HELI08, 0, 0, 133 },{ 134, HELI09, 0, 0, 133 },{ 134, CARG07, 0, 0, 133 },{ 134, CARG08, 0, 0, 133 },{ 134, CARG09, 0, 0, 133 },{ 134, HELITAKEOFF, 0, 0, 133 },{ 134, TERM22, 0, 0, 133 },{ 134, TERM01, 0, 0, 155 },{ 134, TERM02, 0, 0, 155 },{ 134, TERM03, 0, 0, 155 },{ 134, TERM04, 0, 0, 155 },{ 134, CARG01, 0, 0, 155 },{ 134, CARG02, 0, 0, 155 },{ 134, CARG03, 0, 0, 155 },{ 134, 0, 0, 0, 135 },
 { 135, BACKUP, 0, TAXI40_block, 0 },{ 135, TERM23, 0, 0,  34 },{ 135, HANGAR, 0, 0,  11 },{ 135, TERM22, 0, 0, 134 },{ 135, TERM24, 0, 0, 136 },{ 135, TERM25, 0, 0, 136 },{ 135, HELI07, 0, 0, 134 },{ 135, HELI08, 0, 0, 134 },{ 135, HELI09, 0, 0, 134 },{ 135, CARG07, 0, 0, 134 },{ 135, CARG08, 0, 0, 134 },{ 135, CARG09, 0, 0, 134 },{ 135, CARG01, 0, 0, 134 },{ 135, CARG02, 0, 0, 134 },{ 135, CARG03, 0, 0, 134 },{ 135, HELITAKEOFF, 0, 0, 134 },{ 135, 0, 0, 0, 139 },
-{ 136, BACKUP, 0, TAXI41_block, 0 },{ 136, TERM24, 0, 0,  35 },{ 136, HANGAR, 0, 0, 135 },{ 136, TERM25, 0, 0, 137 },{ 136, 0, 0, 0, 139 },
-{ 137, BACKUP, 0, TAXI42_block, 0 },{ 137, TERM25, 0, 0,  36 },{ 137, HANGAR, 0, 0, 136 },{ 137, 0, 0, 0, 138 },
+{ 136, BACKUP, 0, TAXI41_block, 0 },{ 136, TERM24, 0, 0,  35 },{ 136, HANGAR, 0, 0, 139 },{ 136, TERM25, 0, 0, 137 },{ 136, 0, 0, 0, 139 },
+{ 137, BACKUP, 0, TAXI42_block, 0 },{ 137, TERM25, 0, 0,  36 },{ 137, 0, 0, 0, 138 },
 { 138,    255, 0, TAXI43_block, 0 },{ 138, 0, 0, 0, 139 },
-{ 139,    255, 0, TAXI44_block, 0 },{ 139, 0, 0, 0, 140 },
+{ 139,    255, 0, TAXI44_block, 0 },{ 139, HANGAR, 0, 0, 11 },{ 139, 0, 0, 0, 140 },
 // Airplane Takeoff - Runway 06
 { 140, TAKEOFF, RUNW06_block, TAXI49_block, 141 },
 { 141, 0, 0, 0, 142 },
 { 142, STARTTAKEOFF, 0, 0, 143 },
 { 143, ENDTAKEOFF, 0, 0, 0 },{ 143, 0, 0, 0, 57 },   // End Airport control of airplane.
-													 // Helicopter Position for Helipads.
+// Helicopter Position for Helipads.
 { 144, 0, HANG05_block, 0, 145 },
 { 145, 0, HANG05_block, 0,  10 },
 // Helicopter -- takeoff
@@ -3014,8 +3014,8 @@ static const byte _airport_terminal_terminus4[] = { 1, 36 };
 static const byte _airport_entries_terminus4[] = { 77, 76, 79, 78 };
 static const byte _airport_helientry_terminus4[] = { 210, 210, 210, 210 };
 static const AirportFTAbuildup _airport_fta_terminus4[] = {
-	// Airplane & Helicopter Hangars
-	{ 0, HANGAR, 0, 0,  8 },{ 0, 0, 0, 0,  8 },{ 0, TERM09, 0, 0,  8 },{ 0, TERM07, 0, 0,  8 },{ 0, TERM05, 0, 0,  8 },{ 0, TERM03, 0, 0,  8 },{ 0, TERM01, 0, 0,  8 },{ 0, TERM08, 0, 0,  8 },{ 0, TERM06, 0, 0 , 8 },{ 0, TERM04, 0, 0,  8 },{ 0, TERM02, 0, 0,  8 },{ 0, TERM16, 0, 0,  8 },{ 0, TERM28, 0, 0,  8 },{ 0, TERM17, 0, 0,  8 },{ 0, TERM29, 0, 0,  8 },{ 0, TERM18, 0, 0,  8 },{ 0, TERM30, 0, 0,  8 },{ 0, TERM31, 0, 0,  8 },{ 0, HELI01, 0, 0,  8 },{ 0, HELI02, 0, 0,  8 },{ 0, HELI03, 0, 0,  8 },{ 0, CARG01, 0, 0,  8 },{ 0, CARG02, 0, 0,  8 },{ 0, CARG03, 0, 0,  8 },{ 0, CARG10, 0, 0,  8 },{ 0, CARG11, 0, 0,  8 },{ 0, CARG12, 0, 0,  8 },
+// Airplane & Helicopter Hangars
+{ 0, HANGAR, 0, 0,  8 },{ 0, 0, 0, 0,  8 },{ 0, TERM09, 0, 0,  8 },{ 0, TERM07, 0, 0,  8 },{ 0, TERM05, 0, 0,  8 },{ 0, TERM03, 0, 0,  8 },{ 0, TERM01, 0, 0,  8 },{ 0, TERM08, 0, 0,  8 },{ 0, TERM06, 0, 0 , 8 },{ 0, TERM04, 0, 0,  8 },{ 0, TERM02, 0, 0,  8 },{ 0, TERM16, 0, 0,  8 },{ 0, TERM28, 0, 0,  8 },{ 0, TERM17, 0, 0,  8 },{ 0, TERM29, 0, 0,  8 },{ 0, TERM18, 0, 0,  8 },{ 0, TERM30, 0, 0,  8 },{ 0, TERM31, 0, 0,  8 },{ 0, HELI01, 0, 0,  8 },{ 0, HELI02, 0, 0,  8 },{ 0, HELI03, 0, 0,  8 },{ 0, CARG01, 0, 0,  8 },{ 0, CARG02, 0, 0,  8 },{ 0, CARG03, 0, 0,  8 },{ 0, CARG10, 0, 0,  8 },{ 0, CARG11, 0, 0,  8 },{ 0, CARG12, 0, 0,  8 },
 { 1, HANGAR, 0, 0,  9 },{ 1, 0, 0, 0,  9 },{ 1, TERM09, 0, 0,  9 },{ 1, TERM08, 0, 0,  9 },{ 1, TERM07, 0, 0,  9 },{ 1, TERM28, 0, 0,  9 },{ 1, TERM29, 0, 0,  9 },{ 1, TERM30, 0, 0,  9 },{ 1, TERM31, 0, 0,  9 },{ 1, HELI03, 0, 0,  9 },{ 1, HELI02, 0, 0,  9 },{ 1, HELI01, 0, 0,  9 },{ 1, CARG10, 0, 0,  9 },{ 1, CARG11, 0, 0,  9 },{ 1, CARG12, 0, 0,  9 },{ 1, CARG03, 0, 0,  9 },{ 1, CARG02, 0, 0,  9 },{ 1, CARG01, 0, 0,  9 },{ 1, HELITAKEOFF, 0, 0,  9 },
 { 2, HANGAR, 0, 0, 10 },{ 2, 0, 0, 0, 10 },{ 2, TERM18, 0, 0, 10 },{ 2, TERM16, 0, 0, 10 },{ 2, TERM14, 0, 0, 10 },{ 2, TERM12, 0, 0, 10 },{ 2, TERM10, 0, 0, 10 },{ 2, TERM17, 0, 0, 10 },{ 2, TERM15, 0, 0 ,10 },{ 2, TERM13, 0, 0, 10 },{ 2, TERM11, 0, 0, 10 },{ 2, TERM25, 0, 0, 10 },{ 2, TERM01, 0, 0, 10 },{ 2, TERM26, 0, 0, 10 },{ 2, TERM02, 0, 0, 10 },{ 2, TERM27, 0, 0, 10 },{ 2, TERM03, 0, 0, 10 },{ 2, TERM04, 0, 0, 10 },{ 2, HELI04, 0, 0, 10 },{ 2, HELI05, 0, 0, 10 },{ 2, HELI06, 0, 0, 10 },{ 2, CARG04, 0, 0, 10 },{ 2, CARG05, 0, 0, 10 },{ 2, CARG06, 0, 0, 10 },{ 2, CARG01, 0, 0, 10 },{ 2, CARG02, 0, 0, 10 },{ 2, CARG03, 0, 0, 10 },
 { 3, HANGAR, 0, 0, 11 },{ 3, 0, 0, 0, 11 },{ 3, TERM18, 0, 0, 11 },{ 3, TERM17, 0, 0, 11 },{ 3, TERM16, 0, 0, 11 },{ 3, TERM01, 0, 0, 11 },{ 3, TERM02, 0, 0, 11 },{ 3, TERM03, 0, 0, 11 },{ 3, TERM04, 0, 0, 11 },{ 3, HELI06, 0, 0, 11 },{ 3, HELI05, 0, 0, 11 },{ 3, HELI04, 0, 0, 11 },{ 3, CARG01, 0, 0, 11 },{ 3, CARG02, 0, 0, 11 },{ 3, CARG03, 0, 0, 11 },{ 3, CARG06, 0, 0, 11 },{ 3, CARG05, 0, 0, 11 },{ 3, CARG04, 0, 0, 11 },{ 3, HELITAKEOFF, 0, 0, 11 },
@@ -3099,7 +3099,7 @@ static const AirportFTAbuildup _airport_fta_terminus4[] = {
 { 77, 0, 0, 0, 206 },  // Pod 3
 { 78, 0, 0, 0, 208 },  // Pod 4
 { 79, 0, 0, 0, 202 },  // Pod 1
-					   // Helicopter -- Holding Pattern
+// Helicopter -- Holding Pattern
 { 80, HELILANDING, 0, 0, 81 },
 { 81, HELIENDLANDING, 0, 0, 81 },{ 81, HELI12, 0, 0, 226 },{ 81, HELI09, 0, 0, 223 },{ 81, HELI06, 0, 0, 220 },{ 81, HELI03, 0, 0, 217 },{ 81, HELI11, 0, 0, 225 },{ 81, HELI08, 0, 0, 222 },{ 81, HELI05, 0, 0, 219 },{ 81, HELI02, 0, 0, 216 },{ 81, HELI10, 0, 0, 224 },{ 81, HELI07, 0, 0, 221 },{ 81, HELI04, 0, 0, 218 },{ 81, HELI01, 0, 0, 215 },{ 81, HANGAR, 0, 0, 82 },{ 81, 0, 0, 0, 82 },
 //Helicopter -- Hangar 01
@@ -3112,7 +3112,7 @@ static const AirportFTAbuildup _airport_fta_terminus4[] = {
 { 86, ENDLANDING, 0, TAXI01_block, 91 },{ 86, 0, 0, 0, 91 },{ 86, TERM09, 0, 0, 0 },{ 86, TERM07, 0, 0, 0 },{ 86, TERM05, 0, 0, 0 },{ 86, TERM03, 0, 0, 0 },{ 86, TERM01, 0, 0, 0 },{ 86, TERM08, 0, 0, 0 },{ 86, TERM06, 0, 0, 0 },{ 86, TERM04, 0, 0, 0 },{ 86, TERM02, 0, 0, 0 },{ 86, CARG01, 0, 0, 0 },{ 86, CARG02, 0, 0, 0 },{ 86, CARG03, 0, 0, 0 },
 { 87,       0, 0, TAXI01_block, 91 }, // Unused
 									  // Airplane Landing Runway02
-{ 88,     255, RUNW02_block, TAXI10_block | TAXI11_block | TAXI13_block, 89 },{ 88, LANDING, 0, 0, 89 },
+{ 88,     255, RUNW02_block, TAXI09_block | TAXI10_block | TAXI11_block | TAXI13_block, 89 },{ 88, LANDING, 0, 0, 89 },
 { 89, LANDING, 0, 0, 90 },{ 89, FLYING, 0, 0, 106 },{ 89, 0, 0, 0, 90 },
 { 90, ENDLANDING, 0, TAXI57_block, 91 },{ 90, 0, 0, 0, 91 },{ 90, TERM09, 0, 0, 0 },{ 90, TERM07, 0, 0, 0 },{ 90, TERM05, 0, 0, 0 },{ 90, TERM03, 0, 0, 0 },{ 90, TERM01, 0, 0, 0 },{ 90, TERM08, 0, 0, 0 },{ 90, TERM06, 0, 0, 0 },{ 90, TERM04, 0, 0, 0 },{ 90, TERM02, 0, 0, 0 },{ 90, CARG01, 0, 0, 0 },{ 90, CARG02, 0, 0, 0 },{ 90, CARG03, 0, 0, 0 },
 // End Landing for Runways 1 & 2
@@ -3134,7 +3134,7 @@ static const AirportFTAbuildup _airport_fta_terminus4[] = {
 { 104, 0, 0, 0, 105 },
 { 105, STARTTAKEOFF, 0, 0, 106 },
 { 106, ENDTAKEOFF, 0, 0, 0 },{ 106, 0, 0, 0, 77 },   // End Airport control of airplane.
-													 // Helicopter -- takeoff
+// Helicopter -- takeoff
 { 107, HELITAKEOFF, 0, 0, 0 },
 { 108, HELITAKEOFF, 0, 0, 0 },
 { 109, HELITAKEOFF, 0, 0, 0 },
@@ -3145,8 +3145,8 @@ static const AirportFTAbuildup _airport_fta_terminus4[] = {
 { 111, LANDING, 0, 0, 112 },{ 111, FLYING, 0, 0, 212 },{ 111, 0, 0, 0, 112 },
 { 112, ENDLANDING, 0, TAXI14_block, 117 },{ 112, 0, 0, 0, 117 },{ 112, TERM18, 0, 0, 0 },{ 112, TERM16, 0, 0, 0 },{ 112, TERM14, 0, 0, 0 },{ 112, TERM12, 0, 0, 0 },{ 112, TERM10, 0, 0, 0 },{ 112, TERM17, 0, 0, 0 },{ 112, TERM15, 0, 0, 0 },{ 112, TERM13, 0, 0, 0 },{ 112, TERM11, 0, 0, 0 },{ 112, CARG04, 0, 0, 0 },{ 112, CARG05, 0, 0, 0 },{ 112, CARG06, 0, 0, 0 },
 { 113,       0, 0, TAXI14_block, 117 }, // Unused
-										// Airplane Landing Runway04
-{ 114,     255, RUNW04_block, TAXI23_block | TAXI24_block | TAXI26_block, 115 },{ 114, LANDING, 0, 0, 115 },
+// Airplane Landing Runway04
+{ 114,     255, RUNW04_block, TAXI22_block | TAXI23_block | TAXI24_block | TAXI26_block, 115 },{ 114, LANDING, 0, 0, 115 },
 { 115, LANDING, 0, 0, 116 },{ 115, FLYING, 0, 0, 132 },{ 115, 0, 0, 0, 116 },
 { 116, ENDLANDING, 0, TAXI58_block, 117 },{ 116, 0, 0, 0, 117 },{ 116, TERM18, 0, 0, 0 },{ 116, TERM16, 0, 0, 0 },{ 116, TERM14, 0, 0, 0 },{ 116, TERM12, 0, 0, 0 },{ 116, TERM10, 0, 0, 0 },{ 116, TERM17, 0, 0, 0 },{ 116, TERM15, 0, 0, 0 },{ 116, TERM13, 0, 0, 0 },{ 116, TERM11, 0, 0, 0 },{ 116, CARG04, 0, 0, 0 },{ 116, CARG05, 0, 0, 0 },{ 116, CARG06, 0, 0, 0 },
 // End Landing for Runways 3 & 4
@@ -3168,7 +3168,7 @@ static const AirportFTAbuildup _airport_fta_terminus4[] = {
 { 130, 0, 0, 0, 131 },
 { 131, STARTTAKEOFF, 0, 0, 132 },
 { 132, ENDTAKEOFF, 0, 0, 0 },{ 132, 0, 0, 0, 78 },   // End Airport control of airplane.
-													 //Helicopter -- Hangar 03
+//Helicopter -- Hangar 03
 { 133, 0, HANG03_block, 0, 134 },
 { 134, 0, HANG03_block, 0,  10 },
 // Helicopter -- takeoff
@@ -3182,8 +3182,8 @@ static const AirportFTAbuildup _airport_fta_terminus4[] = {
 { 139, LANDING, 0, 0, 140 },{ 139, FLYING, 0, 0, 213 },{ 139, 0, 0, 0, 140 },
 { 140, ENDLANDING, 0, TAXI27_block, 145 },{ 140, 0, 0, 0, 145 },{ 140, TERM27, 0, 0, 0 },{ 140, TERM25, 0, 0, 0 },{ 140, TERM23, 0, 0, 0 },{ 140, TERM21, 0, 0, 0 },{ 140, TERM19, 0, 0, 0 },{ 140, TERM26, 0, 0, 0 },{ 140, TERM24, 0, 0, 0 },{ 140, TERM22, 0, 0, 0 },{ 140, TERM20, 0, 0, 0 },{ 140, CARG07, 0, 0, 0 },{ 140, CARG08, 0, 0, 0 },{ 140, CARG09, 0, 0, 0 },
 { 141,       0, 0, TAXI27_block, 145 }, //Unused
-										// Airplane Landing Runway06 
-{ 142,     255, RUNW06_block, TAXI36_block | TAXI37_block | TAXI39_block, 143 },{ 142, LANDING, 0, 0, 143 },
+// Airplane Landing Runway06 
+{ 142,     255, RUNW06_block, TAXI35_block | TAXI36_block | TAXI37_block | TAXI39_block, 143 },{ 142, LANDING, 0, 0, 143 },
 { 143, LANDING, 0, 0, 144 },{ 143, FLYING, 0, 0, 160 },{ 143, 0, 0, 0, 144 },
 { 144, ENDLANDING, 0, TAXI59_block, 145 },{ 144, 0, 0, 0, 145 },{ 144, TERM27, 0, 0, 0 },{ 144, TERM25, 0, 0, 0 },{ 144, TERM23, 0, 0, 0 },{ 144, TERM21, 0, 0, 0 },{ 144, TERM19, 0, 0, 0 },{ 144, TERM26, 0, 0, 0 },{ 144, TERM24, 0, 0, 0 },{ 144, TERM22, 0, 0, 0 },{ 144, TERM20, 0, 0, 0 },{ 144, CARG07, 0, 0, 0 },{ 144, CARG08, 0, 0, 0 },{ 144, CARG09, 0, 0, 0 },
 // End Landing for Runways 5 & 6
@@ -3220,7 +3220,7 @@ static const AirportFTAbuildup _airport_fta_terminus4[] = {
 { 168, ENDLANDING, 0, TAXI40_block, 173 },{ 168, 0, 0, 0, 173 },{ 168, TERM36, 0, 0, 0 },{ 168, TERM34, 0, 0, 0 },{ 168, TERM32, 0, 0, 0 },{ 168, TERM30, 0, 0, 0 },{ 168, TERM28, 0, 0, 0 },{ 168, TERM35, 0, 0, 0 },{ 168, TERM33, 0, 0, 0 },{ 168, TERM31, 0, 0, 0 },{ 168, TERM29, 0, 0, 0 },{ 168, CARG10, 0, 0, 0 },{ 168, CARG11, 0, 0, 0 },{ 168, CARG12, 0, 0, 0 },
 { 169,       0, 0, TAXI40_block, 173 },  //Unused
 										 // Airplane Landing Runway08
-{ 170,     255, 0, RUNW08_block | TAXI49_block | TAXI50_block | TAXI52_block, 171 },{ 170, LANDING, 0, 0, 171 },
+{ 170,     255, 0, RUNW08_block | TAXI48_block | TAXI49_block | TAXI50_block | TAXI52_block, 171 },{ 170, LANDING, 0, 0, 171 },
 { 171, LANDING, 0, 0, 172 },{ 171, FLYING, 0, 0, 188 },{ 171, 0, 0, 0, 172 },
 { 172, ENDLANDING, 0, TAXI60_block, 173 },{ 172, 0, 0, 0, 173 },{ 172, TERM36, 0, 0, 0 },{ 172, TERM34, 0, 0, 0 },{ 172, TERM32, 0, 0, 0 },{ 172, TERM30, 0, 0, 0 },{ 172, TERM28, 0, 0, 0 },{ 172, TERM35, 0, 0, 0 },{ 172, TERM33, 0, 0, 0 },{ 172, TERM31, 0, 0, 0 },{ 172, TERM29, 0, 0, 0 },{ 172, CARG10, 0, 0, 0 },{ 172, CARG11, 0, 0, 0 },{ 172, CARG12, 0, 0, 0 },
 // End Landing for Runways 7 & 8
@@ -3314,8 +3314,8 @@ static const byte _airport_terminal_intercontinental[] = { 1, 8 };
 static const byte _airport_entries_intercontinental[] = { 17, 16, 19, 18 };
 static const byte _airport_helientry_intercontinental[] = { 93, 93, 93, 93 };
 static const AirportFTAbuildup _airport_fta_intercontinental[] = {
-	// Hangar tiles and areas outside hangars
-	{ 0, HANGAR, 0, 0, 2 },{ 0, 0, 0, 0, 2 },{ 0, TERM02, 0, 0, 2 },{ 0, TERM03, 0, 0, 2 },{ 0, TERM04, 0, 0, 2 },{ 0, TERM08, 0, 0, 2 },{ 0, TERM07, 0, 0, 2 },{ 0, TERM06, 0, 0, 2 },{ 0, TERM05, 0, 0, 2 },{ 0, TERM01, 0, 0, 2 },{ 0, HELI02, 0, 0, 0 },{ 0, HELI01, 0, 0, 0 },{ 0, CARG02, 0, 0, 0 },{ 0, CARG01, 0, 0, 0 },
+// Hangar tiles and areas outside hangars
+{ 0, HANGAR, 0, 0, 2 },{ 0, 0, 0, 0, 2 },{ 0, TERM02, 0, 0, 2 },{ 0, TERM03, 0, 0, 2 },{ 0, TERM04, 0, 0, 2 },{ 0, TERM08, 0, 0, 2 },{ 0, TERM07, 0, 0, 2 },{ 0, TERM06, 0, 0, 2 },{ 0, TERM05, 0, 0, 2 },{ 0, TERM01, 0, 0, 2 },{ 0, HELI02, 0, 0, 0 },{ 0, HELI01, 0, 0, 0 },{ 0, CARG02, 0, 0, 0 },{ 0, CARG01, 0, 0, 0 },
 { 1, HANGAR, 0, 0, 3 },{ 1, 0, 0, 0, 3 },{ 1, TERM06, 0, 0, 3 },{ 1, TERM05, 0, 0, 3 },{ 1, TERM01, 0, 0, 3 },{ 1, TERM02, 0, 0, 3 },{ 1, TERM03, 0, 0, 3 },{ 1, TERM04, 0, 0, 3 },{ 1, TERM08, 0, 0, 3 },{ 1, TERM07, 0, 0, 3 },{ 1, HELI01, 0, 0, 0 },{ 1, HELI02, 0, 0, 0 },{ 1, CARG01, 0, 0, 0 },{ 1, CARG02, 0, 0, 0 },
 { 2, 255, HANG01_block, 0, 0 },{ 2, HANGAR, 0, 0, 0 },{ 2, HELITAKEOFF, 0, 0, 82 },{ 2, 0, 0, 0, 32 },
 { 3, 255, HANG02_block, 0, 0 },{ 3, HANGAR, 0, 0, 1 },{ 3, HELITAKEOFF, 0, 0, 83 },{ 3, TAKEOFF, 0, 0, 60 },{ 3, 0, 0, 0, 60 },
@@ -3400,12 +3400,12 @@ static const AirportFTAbuildup _airport_fta_intercontinental[] = {
 { 67, 0, 0, 0, 68 },
 { 68, STARTTAKEOFF, 0, 0, 69 },
 { 69, ENDTAKEOFF, 0, 0, 0 },{ 69, 0, 0, 0, 17 },     // End Airport Control  
-													 // Runway04 - Takeoff
+// Runway04 - Takeoff
 { 70, TAKEOFF, RUNW04_block, TAXI41_block, 71 },
 { 71, 0, 0, 0, 72 },
 { 72, STARTTAKEOFF, 0, 0, 73 },
 { 73, ENDTAKEOFF, 0, 0, 0 },{ 73, 0, 0, 0, 19 },    // End Airport Control
-													/* Helicopter -- stay in air in special place as a buffer to choose from helipads */
+/* Helicopter -- stay in air in special place as a buffer to choose from helipads */
 { 74, HELILANDING, 0, 0, 75 },
 { 75, HELIENDLANDING, 0, 0,  75 },{ 75, HELI01, 0, 0, 76 },{ 75, HELI02, 0, 0, 77 },{ 75, HANGAR, 0, 0, 84 },
 // Helicopter Positioning
@@ -3447,8 +3447,8 @@ static const byte _airport_terminal_sanfran[] = { 1, 9 };
 static const byte _airport_entries_sanfran[] = { 22, 19, 25, 23 };  // SW, SE, NE, NW
 static const byte _airport_helientry_sanfran[] = { 73, 73, 73, 73 };
 static const AirportFTAbuildup _airport_fta_sanfran[] = {
-	// Airplane & Helicopter Hangars
-	{ 0, HANGAR, 0, 0, 2 },{ 0, 0, 0, 0, 2 },{ 0, TERM07, 0, 0, 2 },{ 0, TERM05, 0, 0, 2 },{ 0, TERM03, 0, 0, 2 },{ 0, TERM01, 0, 0, 2 },{ 0, TERM08, 0, 0, 2 },{ 0, TERM06, 0, 0, 2 },{ 0, TERM04, 0, 0, 2 },{ 0, TERM02, 0, 0, 2 },{ 0, TERM09, 0, 0, 2 },{ 0, HELI01, 0, 0, 2 },{ 0, HELI02, 0, 0, 2 },{ 0, CARG01, 0, 0, 2 },{ 0, CARG02, 0, 0, 2 },{ 0, CARG03, 0, 0, 2 },{ 0, CARG04, 0, 0, 2 },
+// Airplane & Helicopter Hangars
+{ 0, HANGAR, 0, 0, 2 },{ 0, 0, 0, 0, 2 },{ 0, TERM07, 0, 0, 2 },{ 0, TERM05, 0, 0, 2 },{ 0, TERM03, 0, 0, 2 },{ 0, TERM01, 0, 0, 2 },{ 0, TERM08, 0, 0, 2 },{ 0, TERM06, 0, 0, 2 },{ 0, TERM04, 0, 0, 2 },{ 0, TERM02, 0, 0, 2 },{ 0, TERM09, 0, 0, 2 },{ 0, HELI01, 0, 0, 2 },{ 0, HELI02, 0, 0, 2 },{ 0, CARG01, 0, 0, 2 },{ 0, CARG02, 0, 0, 2 },{ 0, CARG03, 0, 0, 2 },{ 0, CARG04, 0, 0, 2 },
 { 1, HANGAR, 0, 0, 3 },{ 1, 0, 0, 0, 3 },{ 1, TERM09, 0, 0, 3 },{ 1, TERM08, 0, 0, 3 },{ 1, TERM07, 0, 0, 3 },{ 1, CARG01, 0, 0, 3 },{ 1, HELI01, 0, 0, 3 },
 { 2,    255, HANG01_block, 0, 0 },{ 2, HANGAR, 0, 0, 0 },{ 2, TAKEOFF, 0, 0, 35 },{ 2, CARG01, 0, 0, 35 },{ 2, CARG02, 0, 0, 35 },{ 2, CARG03, 0, 0, 35 },{ 2, CARG04, 0, 0, 35 },{ 2, HELI01, 0, 0, 35 },{ 2, HELI02, 0, 0, 35 },{ 2, 0, 0, 0, 43 },
 { 3, BACKUP, HANG02_block, 0, 0 },{ 3, HANGAR, 0, 0, 1 },{ 3, TERM09, 0, 0, 12 },{ 3, CARG01, 0, TAXI24_block | TAXI23_block | TAXI22_block | TAXI21_block | TAXI20_block | TAXI19_block | TAXI18_block | TAXI17_block | TAXI16_block | TAXI15_block | TAXI01_block | TAXI02_block, 56 },{ 3, HELI01, 0, TAXI24_block | TAXI23_block | TAXI22_block | TAXI21_block | TAXI20_block | TAXI19_block | TAXI18_block | TAXI17_block | TAXI16_block | TAXI15_block | TAXI01_block | TAXI02_block, 56 },{ 3, 0, 0, 0, 56 },
@@ -3520,12 +3520,12 @@ static const AirportFTAbuildup _airport_fta_sanfran[] = {
 { 60, 0, 0, 0, 61 },
 { 61, STARTTAKEOFF, 0, 0, 62 },
 { 62, ENDTAKEOFF, 0, 0, 0 },    // End Airport control of airplane.
-								// Airplane Takeoff Runway 04
+// Airplane Takeoff Runway 04
 { 63, TAKEOFF, RUNW04_block | RUNW01_block | RUNW02_block, 0, 64 },
 { 64, 0, 0, 0, 65 },
 { 65, STARTTAKEOFF, 0, 0, 66 },
 { 66, ENDTAKEOFF, 0, 0, 0 },    // End Airport control of airplane.
-								// Helicopter -- stay in air in special place as a buffer to choose from helipads
+// Helicopter -- stay in air in special place as a buffer to choose from helipads
 { 67, HELILANDING, 0, 0, 19 },{ 67, HELIENDLANDING, 0, 0, 68 },{ 67, 0, 0, 0, 19 },
 { 68, HELIENDLANDING, 0, 0, 69 },{ 68, HELI01, 0, 0, 76 },{ 68, HELI02, 0, 0, 77 },{ 68, HANGAR, 0, 0, 69 },
 //Helicopter -- Hangar
@@ -3556,8 +3556,8 @@ static const byte _airport_terminal_leipzig[] = { 1, 7 };
 static const byte _airport_entries_leipzig[] = { 23, 17, 20, 21 }; // SW, SE, NE, NW
 static const byte _airport_helientry_leipzig[] = { 74, 74, 74, 74 };
 static const AirportFTAbuildup _airport_fta_leipzig[] = {
-	// Airplane & Helicopter Hangars
-	{ 0, HANGAR, 0, 0, 2 },{ 0, 0, 0, 0, 2 },{ 0, TERM05, 0, 0, 2 },{ 0, TERM03, 0, 0, 2 },{ 0, TERM01, 0, 0, 2 },{ 0, TERM04, 0, 0, 2 },{ 0, TERM02, 0, 0, 2 },{ 0, TERM07, 0, 0, 2 },{ 0, TERM06, 0, 0, 2 },{ 0, HELI01, 0, 0, 2 },{ 0, HELI02, 0, 0, 2 },{ 0, CARG01, 0, 0, 2 },{ 0, CARG02, 0, 0, 2 },{ 0, CARG03, 0, 0, 2 },{ 0, CARG04, 0, 0, 2 },
+// Airplane & Helicopter Hangars
+{ 0, HANGAR, 0, 0, 2 },{ 0, 0, 0, 0, 2 },{ 0, TERM05, 0, 0, 2 },{ 0, TERM03, 0, 0, 2 },{ 0, TERM01, 0, 0, 2 },{ 0, TERM04, 0, 0, 2 },{ 0, TERM02, 0, 0, 2 },{ 0, TERM07, 0, 0, 2 },{ 0, TERM06, 0, 0, 2 },{ 0, HELI01, 0, 0, 2 },{ 0, HELI02, 0, 0, 2 },{ 0, CARG01, 0, 0, 2 },{ 0, CARG02, 0, 0, 2 },{ 0, CARG03, 0, 0, 2 },{ 0, CARG04, 0, 0, 2 },
 { 1, HANGAR, 0, 0, 3 },{ 1, 0, 0, 0, 3 },{ 1, TERM07, 0, 0, 3 },{ 1, TERM06, 0, 0, 3 },{ 1, TERM05, 0, 0, 3 },{ 1, TERM03, 0, 0, 3 },{ 1, TERM01, 0, 0, 3 },{ 1, TERM04, 0, 0, 3 },{ 1, TERM02, 0, 0, 3 },{ 1, HELI02, 0, 0, 3 },{ 1, HELI01, 0, 0, 3 },{ 1, CARG04, 0, 0, 3 },{ 1, CARG02, 0, 0, 3 },{ 1, CARG03, 0, 0, 3 },{ 1, CARG01, 0, 0, 3 },
 { 2, 255, HANG01_block, 0, 0 },{ 2, HANGAR, 0, 0, 0 },{ 2, TERM06, HANG02_block, TAXI07_block | TAXI08_block | TAXI22_block, 38 },{ 2, TERM07, HANG02_block, TAXI07_block | TAXI08_block | TAXI22_block, 38 },{ 2, CARG01, HANG02_block, TAXI07_block | TAXI08_block | TAXI22_block, 38 },{ 2, CARG02, HANG02_block, TAXI07_block | TAXI08_block | TAXI22_block, 38 },{ 2, CARG03, HANG02_block, TAXI07_block | TAXI08_block | TAXI22_block, 38 },{ 2, CARG04, HANG02_block, TAXI07_block | TAXI08_block | TAXI22_block, 38 },{ 2, HELI01, HANG02_block, TAXI07_block | TAXI08_block | TAXI22_block, 38 },{ 2, HELI02, HANG02_block, TAXI07_block | TAXI08_block | TAXI22_block, 38 },{ 2, 0, 0, 0, 40 },
 { 3, 255, HANG02_block, 0, 0 },{ 3, HANGAR, 0, 0, 1 },{ 3, TERM01, 0, TAXI08_block | TAXI22_block, 31 },{ 3, TERM02, 0, TAXI08_block | TAXI22_block, 31 },{ 3, TERM03, 0, TAXI08_block | TAXI22_block, 31 },{ 3, TERM04, 0, TAXI08_block | TAXI22_block, 31 },{ 3, TERM05, 0, TAXI08_block | TAXI22_block, 31 },{ 3, 0, 0, 0, 53 },
@@ -3591,13 +3591,13 @@ static const AirportFTAbuildup _airport_fta_leipzig[] = {
 { 26, LANDING, 0, 0, 27 },{ 26, FLYING, 0, 0, 63 },{ 26, 0, 0, 0, 27 },
 { 27, ENDLANDING, 0, TAXI01_block, 33 },{ 27, 0, 0, 0, 33 },{ 27, TERM05, 0, 0, 0 },{ 27, TERM03, 0, 0, 0 },{ 27, TERM01, 0, 0, 0 },{ 27, TERM04, 0, 0, 0 },{ 27, TERM02, 0, 0, 0 },{ 27, TERM07, 0, 0, 0 },{ 27, TERM06, 0, 0, 0 },{ 27, CARG01, 0, 0, 0 },{ 27, CARG02, 0, 0, 0 },{ 27, CARG03, 0, 0, 0 },{ 27, CARG04, 0, 0, 0 },
 { 28, 0, 0, TAXI01_block, 28 },  //Unused
-								 // Airplane Landing Runway02
+// Airplane Landing Runway02
 { 29,     255, RUNW02_block, TAXI28_block | TAXI29_block, 30 },{ 29, LANDING, 0, 0, 30 },
 { 30, LANDING, 0, 0, 31 },{ 30, FLYING, 0, 0, 67 },{ 30, 0, 0, 0, 31 },
 { 31, ENDLANDING, 0, TAXI22_block,  3 },{ 31, TERM05, 0, 0, 39 },{ 31, TERM03, 0, 0, 39 },{ 31, TERM01, 0, 0, 39 },{ 31, TERM04, 0, 0, 39 },{ 31, TERM02, 0, 0, 39 },{ 31, 0, 0, 0,  3 },{ 31, TERM07, 0, 0,  0 },{ 31, TERM06, 0, 0,  0 },{ 31, CARG04, 0, 0,  0 },{ 31, CARG02, 0, 0,  0 },{ 31, CARG03, 0, 0,  0 },{ 31, CARG01, 0, 0, 0 },
 { 32,	      0, TAXI22_block, 0, 3 },  //Unused
-										// End Landing for Runways 1 & 2
-										// Airplane & Helicopter Taxi  (Main Airport flow)
+// End Landing for Runways 1 & 2
+// Airplane & Helicopter Taxi  (Main Airport flow)
 { 33,      0, 0, TAXI02_block, 34 },
 { 34,      0, 0, TAXI03_block, 35 },
 { 35,      0, 0, TAXI04_block, 36 },
@@ -3630,12 +3630,12 @@ static const AirportFTAbuildup _airport_fta_leipzig[] = {
 { 61, 0, 0, 0, 62 },
 { 62, STARTTAKEOFF, 0, 0, 63 },
 { 63, ENDTAKEOFF, 0, 0, 0 },{ 63, 0, 0, 0, 20 },   // End Airport control of airplane.
-												   // Airplane Takeoff Runway 02
+// Airplane Takeoff Runway 02
 { 64, TAKEOFF, RUNW02_block, TAXI22_block, 66 },
 { 65, 0, 0, TAXI22_block, 66 },  // Skipped at this airport only to keep a plane from taxiing in front of a plane taking off.
 { 66, STARTTAKEOFF, 0, 0, 67 },
 { 67, ENDTAKEOFF, 0, 0, 0 },{ 67, 0, 0, 0, 23 },   // End Airport control of airplane.
-												   // Helicopter -- stay in air in special place as a buffer to choose from helipads
+// Helicopter -- stay in air in special place as a buffer to choose from helipads
 { 68, HELILANDING, 0, 0, 17 },{ 68, HELIENDLANDING, 0, 0, 69 },{ 68, 0, 0, 0, 17 },
 { 69, HELIENDLANDING, 0, 0, 69 },{ 69, HELI01, 0, 0, 75 },{ 69, HELI02, 0, 0, 76 },{ 69, HANGAR, 0, 0, 70 },
 //Helicopter -- Hangar
@@ -3662,8 +3662,8 @@ static const byte _airport_terminal_cargos[] = { 1, 0 };
 static const byte _airport_entries_cargos[] = { 13, 12, 16, 14 };
 static const byte _airport_helientry_cargos[] = { 48, 48, 48, 48 };
 static const AirportFTAbuildup _airport_fta_cargos[] = {
-	// Airplane & Helicopter Hangars
-	{ 0, HANGAR, 0, 0, 0 },{ 0, 0, 0, 0, 2 },{ 0, CARG03, 0, 0, 2 },{ 0, CARG01, 0, 0, 2 },{ 0, CARG04, 0, 0, 2 },{ 0, CARG02, 0, 0, 2 },{ 0, HELI03, 0, 0, 2 },{ 0, HELI01, 0, 0, 2 },{ 0, HELI04, 0, 0, 2 },{ 0, HELI02, 0, 0, 2 },
+// Airplane & Helicopter Hangars
+{ 0, HANGAR, 0, 0, 0 },{ 0, 0, 0, 0, 2 },{ 0, CARG03, 0, 0, 2 },{ 0, CARG01, 0, 0, 2 },{ 0, CARG04, 0, 0, 2 },{ 0, CARG02, 0, 0, 2 },{ 0, HELI03, 0, 0, 2 },{ 0, HELI01, 0, 0, 2 },{ 0, HELI04, 0, 0, 2 },{ 0, HELI02, 0, 0, 2 },
 { 1, HANGAR, 0, 0, 1 },{ 1, 0, 0, 0, 3 },{ 1, CARG03, 0, 0, 3 },{ 1, CARG04, 0, 0, 3 },{ 1, HELI03, 0, 0, 3 },{ 1, HELI04, 0, 0, 3 },
 { 2,    255, HANG01_block, 0, 0 },{ 2, HANGAR, 0, 0, 0 },{ 2, HELITAKEOFF, 0, 0, 46 },{ 2, 0, 0, 0, 24 },
 { 3,    255, HANG02_block, 0, 1 },{ 3, HANGAR, 0, 0, 1 },{ 3, CARG04, 0, TAXI11_block | TAXI10_block | TAXI05_block | TAXI06_block, 28 },{ 3, CARG03, 0, TAXI06_block, 28 },{ 3, HELI04, 0, TAXI11_block | TAXI10_block | TAXI05_block | TAXI06_block, 28 },{ 3, HELI03, 0, TAXI06_block, 28 },{ 3, HELITAKEOFF, 0, 0, 47 },{ 3, 0, 0, 0, 29 },
@@ -3691,7 +3691,7 @@ static const AirportFTAbuildup _airport_fta_cargos[] = {
 { 21, LANDING, 0, 0, 22 },{ 21, FLYING, 0, 0, 37 },{ 21, 0, 0, 0, 22 },
 { 22, ENDLANDING, 0, TAXI01_block,  2 },{ 22, 0, 0, 0,  2 },{ 22, CARG03, 0, 0, 0 },{ 22, CARG01, 0, 0, 0 },{ 22, CARG04, 0, 0, 0 },{ 22, CARG02, 0, 0, 0 },
 { 23, 0, 0, TAXI01_block, 23 },   //Unused
-								  // Main Airport Flow
+// Main Airport Flow
 { 24,    255, 0, TAXI02_block, 25 },{ 24, CARG01, 0, 0,  4 },{ 24, HELI01, 0, 0,  8 },{ 24, CARG02, 0, TAXI09_block | TAXI08_block | TAXI03_block, 25 },{ 24, HELI02, 0, TAXI09_block | TAXI08_block | TAXI03_block, 25 },{ 24, HANGAR, 0, 0, 2 },{ 24, 0, 0, 0, 25 },
 { 25,    255, 0, TAXI03_block, 26 },{ 25, CARG01, 0, 0, 30 },{ 25, CARG02, 0, 0, 30 },{ 25, HELI01, 0, 0, 30 },{ 25, HELI02, 0, 0, 30 },{ 25, HANGAR, 0, 0, 24 },{ 25, 0, 0, 0, 26 },
 { 26,    255, 0, TAXI04_block, 27 },{ 26, CARG04, 0, TAXI11_block | TAXI10_block | TAXI05_block, 27 },{ 26, HELI04, 0, TAXI11_block | TAXI10_block | TAXI05_block, 27 },{ 26, 0, 0, 0, 27 },
@@ -3707,7 +3707,7 @@ static const AirportFTAbuildup _airport_fta_cargos[] = {
 { 35, 0, 0, 0, 36 },
 { 36, STARTTAKEOFF, 0, 0, 37 },
 { 37, ENDTAKEOFF, 0, 0, 0 },{ 37, 0, 0, 0, 13 }, // End Airport Control of planes.
-												 // Helicopter -- stay in air in special place as a buffer to choose from helipads
+// Helicopter -- stay in air in special place as a buffer to choose from helipads
 { 38, HELILANDING, 0, 0, 12 },{ 38, HELIENDLANDING, 0, 0, 39 },{ 38, 0, 0, 0, 12 },
 { 39, HELIENDLANDING, 0, 0, 40 },{ 39, HELI01, 0, 0, 49 },{ 39, HELI02, 0, 0, 50 },{ 39, HELI03, 0, 0, 51 },{ 39, HELI04, 0, 0, 52 },{ 39, HANGAR, 0, 0, 40 },
 //Helicopter -- Hangar
@@ -3742,8 +3742,8 @@ static const byte _airport_terminal_cargol[] = { 1, 0 };
 static const byte _airport_entries_cargol[] = { 21, 20, 24, 22 };
 static const byte _airport_helientry_cargol[] = { 57, 57, 57, 57 };
 static const AirportFTAbuildup _airport_fta_cargol[] = {
-	/* Hangars and Outside Hangars */
-	{ 0, HANGAR, 0, 0, 0 },{ 0, 0, 0, 0, 2 },{ 0, CARG04, 0, 0, 2 },{ 0, CARG08, 0, 0, 2 },{ 0, CARG03, 0, 0, 2 },{ 0, CARG07, 0, 0, 2 },{ 0, CARG02, 0, 0, 2 },{ 0, CARG06, 0, 0, 2 },{ 0, CARG01, 0, 0, 2 },{ 0, CARG05, 0, 0, 2 },{ 0, HELI04, 0, 0, 2 },{ 0, HELI08, 0, 0, 2 },{ 0, HELI03, 0, 0, 2 },{ 0, HELI07, 0, 0, 2 },{ 0, HELI02, 0, 0, 2 },{ 0, HELI06, 0, 0, 2 },{ 0, HELI01, 0, 0, 2 },{ 0, HELI05, 0, 0, 2 },
+/* Hangars and Outside Hangars */
+{ 0, HANGAR, 0, 0, 0 },{ 0, 0, 0, 0, 2 },{ 0, CARG04, 0, 0, 2 },{ 0, CARG08, 0, 0, 2 },{ 0, CARG03, 0, 0, 2 },{ 0, CARG07, 0, 0, 2 },{ 0, CARG02, 0, 0, 2 },{ 0, CARG06, 0, 0, 2 },{ 0, CARG01, 0, 0, 2 },{ 0, CARG05, 0, 0, 2 },{ 0, HELI04, 0, 0, 2 },{ 0, HELI08, 0, 0, 2 },{ 0, HELI03, 0, 0, 2 },{ 0, HELI07, 0, 0, 2 },{ 0, HELI02, 0, 0, 2 },{ 0, HELI06, 0, 0, 2 },{ 0, HELI01, 0, 0, 2 },{ 0, HELI05, 0, 0, 2 },
 { 1, HANGAR, 0, 0, 1 },{ 1, 0, 0, 0, 3 },{ 1, CARG04, 0, 0, 3 },{ 1, CARG08, 0, 0, 3 },{ 1, CARG03, 0, 0, 3 },{ 1, CARG07, 0, 0, 3 },{ 1, CARG02, 0, 0, 3 },{ 1, HELI04, 0, 0, 3 },{ 1, HELI08, 0, 0, 3 },{ 1, HELI03, 0, 0, 3 },{ 1, HELI07, 0, 0, 3 },{ 1, HELI02, 0, 0, 3 },
 { 2,    255, HANG01_block, 0, 0 },{ 2, HANGAR, 0, 0, 0 },{ 2, HELITAKEOFF, 0, 0, 55 },{ 2, CARG05, 0, TAXI02_block, 32 },{ 2, HELI05, 0, TAXI02_block, 32 },{ 2, 0, 0, 0, 33 },
 { 3,    255, HANG02_block, 0, 1 },{ 3, HANGAR, 0, 0, 1 },{ 3, HELITAKEOFF, 0, 0, 56 },{ 3, CARG04, 0, TAXI08_block, 38 },{ 3, CARG08, 0, TAXI07_block, 37 },{ 3, CARG03, 0, TAXI07_block, 37 },{ 3, CARG07, 0, TAXI07_block | TAXI06_block, 37 },{ 3, CARG02, 0, TAXI07_block | TAXI06_block, 37 },{ 3, HELI04, 0, TAXI08_block, 38 },{ 3, HELI08, 0, TAXI07_block, 37 },{ 3, HELI03, 0, TAXI07_block, 37 },{ 3, HELI07, 0, TAXI07_block | TAXI06_block, 37 },{ 3, HELI02, 0, TAXI07_block | TAXI06_block, 37 },{ 3, TAKEOFF, 0, 0, 38 },{ 3, 0, 0, 0, 38 },
@@ -3779,7 +3779,7 @@ static const AirportFTAbuildup _airport_fta_cargol[] = {
 { 29, LANDING, 0, 0, 30 },{ 29, FLYING, 0, 0, 58 },{ 29, 0, 0, 0, 30 },
 { 30, ENDLANDING, 0, TAXI01_block, 32 },{ 30, 0, 0, 0, 32 },{ 30, CARG04, 0, 0, 0 },{ 30, CARG08, 0, 0, 0 },{ 30, CARG03, 0, 0, 0 },{ 30, CARG07, 0, 0, 0 },{ 30, CARG02, 0, 0, 0 },{ 30, CARG06, 0, 0, 0 },{ 30, CARG01, 0, 0, 0 },{ 30, CARG05, 0, 0, 0 },
 { 31, 0, 0, TAXI01_block, 31 },   //Unused
-								  // Main Airport Flow
+// Main Airport Flow
 { 32,    255, 0, TAXI02_block, 33 },{ 32, CARG05, 0, 0,  8 },{ 32, HELI05, 0, 0, 16 },{ 32, HANGAR, 0, 0,  2 },{ 32, 0, 0, 0, 33 },
 { 33, BACKUP, 0, TAXI03_block, 34 },{ 33, CARG01, 0, 0,  4 },{ 33, CARG06, 0, 0,  9 },{ 33, HELI01, 0, 0, 12 },{ 33, HELI06, 0, 0, 17 },{ 33, HANGAR, 0, 0,  2 },{ 33, 0, 0, 0, 34 },
 { 34, BACKUP, 0, TAXI04_block, 35 },{ 34, CARG02, 0, 0,  5 },{ 34, CARG07, 0, 0, 10 },{ 34, HELI02, 0, 0, 13 },{ 34, HELI07, 0, 0, 18 },{ 34, HANGAR, 0, 0, 33 },{ 34, 0, 0, 0, 35 },
@@ -3792,7 +3792,7 @@ static const AirportFTAbuildup _airport_fta_cargol[] = {
 { 40, 0, 0, 0, 41 },
 { 41, STARTTAKEOFF, 0, 0, 42 },
 { 42, ENDTAKEOFF, 0, 0, 0 },  // End Airport Control of planes.
-							  // Helicopter -- stay in air in special place as a buffer to choose from helipads
+// Helicopter -- stay in air in special place as a buffer to choose from helipads
 { 43, HELILANDING, 0, 0, 57 },{ 43, HELIENDLANDING, 0, 0, 44 },{ 43, 0, 0, 0, 20 },
 { 44, HELIENDLANDING, 0, 0, 45 },{ 44, HELI04, 0, 0, 62 },{ 44, HELI08, 0, 0, 66 },{ 44, HELI03, 0, 0, 61 },{ 44, HELI07, 0, 0, 65 },{ 44, HELI02, 0, 0, 60 },{ 44, HELI06, 0, 0, 64 },{ 44, HELI01, 0, 0, 59 },{ 44, HELI05, 0, 0, 63 },{ 44, HANGAR, 0, 0, 45 },
 //Helicopter -- Hangar
@@ -3843,8 +3843,8 @@ static const byte _airport_terminal_cargox[] = { 1, 0 };
 static const byte _airport_entries_cargox[] = { 29, 28, 32, 31 };
 static const byte _airport_helientry_cargox[] = { 92, 92, 92, 92 };
 static const AirportFTAbuildup _airport_fta_cargox[] = {
-	/* Hangars and Outside Hangars */
-	{ 0, HANGAR, 0, 0, 2 },{ 0, 0, 0, 0,  2 },{ 0, CARG06, 0, 0, 2 },{ 0, CARG03, 0, 0, 2 },{ 0, CARG05, 0, 0, 2 },{ 0, CARG02, 0, 0, 2 },{ 0, CARG04, 0, 0, 2 },{ 0, CARG01, 0, 0, 2 },{ 0, CARG12, 0, 0, 2 },{ 0, CARG09, 0, 0, 2 },{ 0, CARG11, 0, 0, 2 },{ 0, CARG08, 0, 0, 2 },{ 0, CARG10, 0, 0, 2 },{ 0, CARG07, 0, 0, 2 },{ 0, HELI06, 0, 0, 2 },{ 0, HELI03, 0, 0, 2 },{ 0, HELI05, 0, 0, 2 },{ 0, HELI02, 0, 0, 2 },{ 0, HELI04, 0, 0, 2 },{ 0, HELI01, 0, 0, 2 },{ 0, HELI12, 0, 0, 2 },{ 0, HELI09, 0, 0, 2 },{ 0, HELI11, 0, 0, 2 },{ 0, HELI08, 0, 0, 2 },{ 0, HELI10, 0, 0, 2 },{ 0, HELI07, 0, 0, 2 },
+/* Hangars and Outside Hangars */
+{ 0, HANGAR, 0, 0, 2 },{ 0, 0, 0, 0,  2 },{ 0, CARG06, 0, 0, 2 },{ 0, CARG03, 0, 0, 2 },{ 0, CARG05, 0, 0, 2 },{ 0, CARG02, 0, 0, 2 },{ 0, CARG04, 0, 0, 2 },{ 0, CARG01, 0, 0, 2 },{ 0, CARG12, 0, 0, 2 },{ 0, CARG09, 0, 0, 2 },{ 0, CARG11, 0, 0, 2 },{ 0, CARG08, 0, 0, 2 },{ 0, CARG10, 0, 0, 2 },{ 0, CARG07, 0, 0, 2 },{ 0, HELI06, 0, 0, 2 },{ 0, HELI03, 0, 0, 2 },{ 0, HELI05, 0, 0, 2 },{ 0, HELI02, 0, 0, 2 },{ 0, HELI04, 0, 0, 2 },{ 0, HELI01, 0, 0, 2 },{ 0, HELI12, 0, 0, 2 },{ 0, HELI09, 0, 0, 2 },{ 0, HELI11, 0, 0, 2 },{ 0, HELI08, 0, 0, 2 },{ 0, HELI10, 0, 0, 2 },{ 0, HELI07, 0, 0, 2 },
 { 1, HANGAR, 0, 0, 3 },{ 1, 0, 0, 0,  3 },{ 1, CARG07, 0, 0, 3 },{ 1, CARG10, 0, 0, 3 },{ 1, CARG08, 0, 0, 3 },{ 1, CARG11, 0, 0, 3 },{ 1, CARG12, 0, 0, 3 },{ 1, CARG09, 0, 0, 3 },{ 1, CARG04, 0, 0, 3 },{ 1, CARG01, 0, 0, 3 },{ 1, CARG05, 0, 0, 3 },{ 1, CARG02, 0, 0, 3 },{ 1, CARG06, 0, 0, 3 },{ 1, CARG03, 0, 0, 3 },{ 1, HELI07, 0, 0, 3 },{ 1, HELI10, 0, 0, 3 },{ 1, HELI08, 0, 0, 3 },{ 1, HELI11, 0, 0, 3 },{ 1, HELI12, 0, 0, 3 },{ 1, HELI09, 0, 0, 3 },{ 1, HELI04, 0, 0, 3 },{ 1, HELI01, 0, 0, 3 },{ 1, HELI05, 0, 0, 3 },{ 1, HELI02, 0, 0, 3 },{ 1, HELI06, 0, 0, 3 },{ 1, HELI03, 0, 0, 3 },
 { 2,    255, HANG01_block, 0, 0 },{ 2, HANGAR, 0, 0, 0 },{ 2, HELITAKEOFF, 0, 0, 90 },{ 2, 0, 0, 0, 44 },
 { 3,    255, HANG02_block, 0, 0 },{ 3, HANGAR, 0, 0, 1 },{ 3, HELITAKEOFF, 0, 0, 91 },{ 3, 0, 0, 0, 51 },
@@ -3888,12 +3888,12 @@ static const AirportFTAbuildup _airport_fta_cargox[] = {
 { 37, LANDING, 0, 0, 38 },{ 37, FLYING, 0, 0, 67 },{ 37, 0, 0, 0, 38 },
 { 38, ENDLANDING, 0, TAXI01_block,  2 },{ 38, 0, 0, 0,  2 },{ 38, CARG06, 0, 0, 0 },{ 38, CARG03, 0, 0, 0 },{ 38, CARG05, 0, 0, 0 },{ 38, CARG02, 0, 0, 0 },{ 38, CARG04, 0, 0, 0 },{ 38, CARG01, 0, 0, 0 },{ 38, CARG12, 0, 0, 0 },{ 38, CARG09, 0, 0, 0 },{ 38, CARG11, 0, 0, 0 },{ 38, CARG08, 0, 0, 0 },{ 38, CARG10, 0, 0, 0 },{ 38, CARG07, 0, 0, 0 },
 { 39, 0, 0, TAXI01_block, 39 }, //Unused
-								// Airplane Landing Runway 02
+// Airplane Landing Runway 02
 { 40,     255, RUNW02_block, TAXI08_block, 41 },{ 40, LANDING, 0, 0, 41 },
 { 41, LANDING, 0, 0, 42 },{ 41, FLYING, 0, 0, 71 },{ 41, 0, 0, 0, 42 },
 { 42, ENDLANDING, 0, TAXI09_block,  3 },{ 42, 0, 0, 0,  3 },{ 42, CARG07, 0, 0, 0 },{ 42, CARG10, 0, 0, 0 },{ 42, CARG08, 0, 0, 0 },{ 42, CARG11, 0, 0, 0 },{ 42, CARG09, 0, 0, 0 },{ 42, CARG12, 0, 0, 0 },{ 42, CARG01, 0, 0, 0 },{ 42, CARG04, 0, 0, 0 },{ 42, CARG02, 0, 0, 0 },{ 42, CARG05, 0, 0, 0 },{ 42, CARG03, 0, 0, 0 },{ 42, CARG06, 0, 0, 0 },
 { 43, 0, 0, TAXI09_block, 43 },  // Unused
-								 /* Airplane Taxi Left side */
+/* Airplane Taxi Left side */
 { 44,    255, 0, TAXI02_block, 45 },{ 44, HANGAR, 0, 0,  2 },{ 44, 0, 0, 0, 45 },
 { 45,    255, 0, TAXI03_block, 46 },{ 45, HANGAR, 0, 0, 44 },{ 45, 0, 0, 0, 46 },
 { 46, BACKUP, 0, TAXI04_block, 47 },{ 46, CARG01, 0, 0,  4 },{ 46, CARG04, 0, 0,  7 },{ 46, HELI01, 0, 0, 16 },{ 46, HELI04, 0, 0, 19 },{ 46, 0, 0, 0, 47 },
@@ -3922,12 +3922,12 @@ static const AirportFTAbuildup _airport_fta_cargox[] = {
 { 65, 0, 0, 0, 66 },
 { 66, STARTTAKEOFF, 0, 0, 67 },
 { 67, ENDTAKEOFF, 0, 0, 0 },{ 67, 0, 0, 0, 29 }, // End Airport Control of planes.
-												 // Airplane Takeoff - Runway02
+// Airplane Takeoff - Runway02
 { 68, TAKEOFF, RUNW02_block, TAXI09_block, 69 },
 { 69, 0, 0, 0, 70 },
 { 70, STARTTAKEOFF, 0, 0, 71 },
 { 71, ENDTAKEOFF, 0, 0, 0 },{ 71, 0, 0, 0, 32 }, // End Airport Control of planes.
-												 // Helicopter -- stay in air in special place as a buffer to choose from helipads
+// Helicopter -- stay in air in special place as a buffer to choose from helipads
 { 72, HELILANDING, 0, 0, 92 },{ 72, HELIENDLANDING, 0, 0, 73 },{ 72, 0, 0, 0, 28 },
 { 73, HELIENDLANDING, 0, 0, 74 },{ 73, HELI03, 0, 0, 95 },{ 73, HELI09, 0, 0, 101 },{ 73, HELI02, 0, 0, 94 },{ 73, HELI08, 0, 0, 100 },{ 73, HELI01, 0, 0, 93 },{ 73, HELI07, 0, 0, 99 },{ 73, HELI06, 0, 0, 98 },{ 73, HELI12, 0, 0, 104 },{ 73, HELI05, 0, 0, 97 },{ 73, HELI11, 0, 0, 103 },{ 73, HELI04, 0, 0, 96 },{ 73, HELI10, 0, 0, 102 },{ 73, HANGAR, 0, 0, 74 },
 //Helicopter -- Hangar 1
@@ -3991,8 +3991,8 @@ static const byte _airport_terminal_commuterl[] = { 1, 6 };
 static const byte _airport_entries_commuterl[] = { 15, 14, 18, 16 };
 static const byte _airport_helientry_commuterl[] = { 46, 46, 46, 46 };
 static const AirportFTAbuildup _airport_fta_commuterl[] = {
-	/* Hangars and Outside Hangars */
-	{ 0, HANGAR, 0, 0, 2 },{ 0, 0, 0, 0,  2 },{ 0, TERM06, 0, 0, 2 },{ 0, TERM04, 0, 0, 2 },{ 0, TERM02, 0, 0, 2 },{ 0, TERM05, 0, 0, 2 },{ 0, TERM03, 0, 0, 2 },{ 0, TERM01, 0, 0, 2 },{ 0, HELI02, 0, 0, 2 },{ 0, HELI01, 0, 0, 2 },{ 0, CARG02, 0, 0, 2 },{ 0, CARG01, 0, 0, 2 },
+/* Hangars and Outside Hangars */
+{ 0, HANGAR, 0, 0, 2 },{ 0, 0, 0, 0,  2 },{ 0, TERM06, 0, 0, 2 },{ 0, TERM04, 0, 0, 2 },{ 0, TERM02, 0, 0, 2 },{ 0, TERM05, 0, 0, 2 },{ 0, TERM03, 0, 0, 2 },{ 0, TERM01, 0, 0, 2 },{ 0, HELI02, 0, 0, 2 },{ 0, HELI01, 0, 0, 2 },{ 0, CARG02, 0, 0, 2 },{ 0, CARG01, 0, 0, 2 },
 { 1, HANGAR, 0, 0, 3 },{ 1, 0, 0, 0,  3 },{ 1, TERM04, 0, 0, 3 },{ 1, TERM05, 0, 0, 3 },{ 1, TERM06, 0, 0, 3 },{ 1, CARG02, 0, 0, 3 },{ 1, HELI02, 0, 0, 3 },
 { 2,    255, HANG01_block, 0, 0 },{ 2, HANGAR, 0, 0, 0 },{ 2, HELITAKEOFF, 0, 0, 44 },{ 2, 0, 0, 0, 27 },
 { 3,    255, HANG02_block, 0, 0 },{ 3, HANGAR, 0, 0, 1 },{ 3, HELITAKEOFF, 0, 0, 45 },{ 3, TERM04, 0, TAXI06_block | TAXI07_block | TAXI08_block, 32 },{ 3, TERM05, 0, TAXI07_block | TAXI08_block, 32 },{ 3, TERM06, 0, TAXI08_block, 32 },{ 3, CARG02, 0, TAXI06_block | TAXI07_block | TAXI08_block, 32 },{ 3, HELI02, 0, TAXI06_block | TAXI07_block | TAXI08_block, 32 },{ 3, 0, 0, 0, 32 },
@@ -4023,7 +4023,7 @@ static const AirportFTAbuildup _airport_fta_commuterl[] = {
 { 23, LANDING, 0, 0, 24 },{ 23, FLYING, 0, 0, 37 },{ 23, 0, 0, 0, 24 },
 { 24, ENDLANDING, 0, TAXI01_block, 26 },{ 24, 0, 0, 0, 26 },{ 24, TERM06, 0, 0, 0 },{ 24, TERM04, 0, 0, 0 },{ 24, TERM02, 0, 0, 0 },{ 24, TERM05, 0, 0, 0 },{ 24, TERM03, 0, 0, 0 },{ 24, TERM01, 0, 0, 0 },{ 24, CARG02, 0, 0, 0 },{ 24, CARG01, 0, 0, 0 },
 { 25, 0, 0, 0, 25 },   // Unused
-					   /* Airplane Taxi Left side */
+/* Airplane Taxi Left side */
 { 26,    255, 0, TAXI02_block, 27 },{ 26, HANGAR, 0, 0, 2 },{ 26, 0, 0, 0, 27 },
 { 27, BACKUP, 0, TAXI03_block, 28 },{ 27, TERM01, 0, 0,  4 },{ 27, HANGAR, 0, 0,  2 },{ 27, 0, 0, 0, 28 },
 { 28, BACKUP, 0, TAXI04_block, 29 },{ 28, TERM02, 0, 0,  5 },{ 28, HANGAR, 0, 0, 27 },{ 28, 0, 0, 0, 29 },
@@ -4037,7 +4037,7 @@ static const AirportFTAbuildup _airport_fta_commuterl[] = {
 { 35, 0, 0, 0, 36 },
 { 36, STARTTAKEOFF, 0, 0, 37 },
 { 37, ENDTAKEOFF, 0, 0, 0 },{ 37, 0, 0, 0, 14 }, // End Airport Control of planes.
-												 // Helicopter -- stay in air in special place as a buffer to choose from helipads
+// Helicopter -- stay in air in special place as a buffer to choose from helipads
 { 38, HELILANDING, 0, 0, 14 },{ 38, HELIENDLANDING, 0, 0, 39 },{ 38, 0, 0, 0, 14 },
 { 39, HELIENDLANDING, 0, 0, 40 },{ 39, HELI01, 0, 0, 40 },{ 39, HELI02, 0, 0, 40 },{ 39, HANGAR, 0, 0, 40 },
 //Helicopter -- Hangar 1
@@ -4062,8 +4062,8 @@ static const byte _airport_terminal_windy[] = { 1, 1 };
 static const byte _airport_entries_windy[] = { 6, 5, 9, 7 };
 static const byte _airport_helientry_windy[] = { 35, 35, 35, 35 };
 static const AirportFTAbuildup _airport_fta_windy[] = {
-	// Airplane & Helicopter Hangars
-	{ 0, HANGAR, 0, 0, 0 },{ 0, 0, 0, 0, 1 },{ 0, TERM01, 0, 0, 1 },{ 0, CARG01, 0, 0, 1 },{ 0, HELI01, 0, 0, 1 },
+// Airplane & Helicopter Hangars
+{ 0, HANGAR, 0, 0, 0 },{ 0, 0, 0, 0, 1 },{ 0, TERM01, 0, 0, 1 },{ 0, CARG01, 0, 0, 1 },{ 0, HELI01, 0, 0, 1 },
 { 1,    255, HANG01_block, 0, 0 },{ 1, HANGAR, 0, 0, 0 },{ 1, HELITAKEOFF, 0, 0, 34 },{ 1, 0, 0, 0, 18 },
 // Terminals
 { 2, TERM01, TERM01_block, 0, 21 },{ 2, HANGAR, HANG01_block, TAXI03_block | TAXI04_block | TAXI05_block | TAXI06_block, 21 },{ 2, 0, 0, 0, 21 },
@@ -4085,7 +4085,7 @@ static const AirportFTAbuildup _airport_fta_windy[] = {
 { 14, LANDING, 0, 0, 15 },{ 14, FLYING, 0, 0, 28 },{ 14, 0, 0, 0, 15 },  // there is a direct reference to this position in aircraft_cmd.cpp, if this position changes, change it there also.
 { 15, ENDLANDING, 0, TAXI01_block, 17 },{ 15, 0, 0, 0, 17 },{ 15, TERM01, 0, 0, 0 },{ 15, CARG01, 0, 0, 0 },
 { 16, 0, 0, 0, 16 },  // Unused
-					  // Main Airport Flow
+// Main Airport Flow
 { 17,    255, 0, TAXI02_block, 18 },{ 17, HANGAR, 0, 0,  1 },{ 17, 0, 0, 0, 18 },
 { 18,    255, 0, TAXI03_block, 19 },{ 18, HANGAR, 0, 0,  1 },{ 18, 0, 0, 0, 19 },
 { 19,    255, 0, TAXI04_block, 20 },{ 19, HANGAR, 0, 0, 18 },{ 19, 0, 0, 0, 20 },
@@ -4099,7 +4099,7 @@ static const AirportFTAbuildup _airport_fta_windy[] = {
 { 26, 0, RUNW01_block, 0, 27 },
 { 27, STARTTAKEOFF, 0, 0, 28 },  // there is a direct reference to this position in aircraft_cmd.cpp, if this position changes, change it there also.
 { 28, ENDTAKEOFF, 0, 0, 0 },{ 28, 0, 0, 0,  5 }, // End Airport Control of planes.
-												 // Helicopter -- stay in air in special place as a buffer to choose from helipads
+// Helicopter -- stay in air in special place as a buffer to choose from helipads
 { 29, HELILANDING, 0, 0, 35 },{ 29, HELIENDLANDING, 0, 0, 30 },{ 29, 0, 0, 0, 35 },
 { 30, HELIENDLANDING, 0, 0, 31 },{ 30, HELI01, 0, 0, 31 },{ 30, HANGAR, 0, 0, 31 },
 //Helicopter -- Hangar
@@ -4126,13 +4126,13 @@ static const byte _airport_terminal_indianapolis[] = { 1, 26 };
 static const byte _airport_entries_indianapolis[] = { 43, 42, 45, 44 };
 static const byte _airport_helientry_indianapolis[] = { 114, 114, 114, 114 };
 static const AirportFTAbuildup _airport_fta_indianapolis[] = {
-	// Airplane & Helicopter Hangars
-	{ 0, HANGAR, 0, 0, 4 },{ 0, 0, 0, 0, 4 },{ 0, TERM06, 0, 0, 4 },{ 0, TERM07, 0, 0, 4 },{ 0, TERM08, 0, 0, 4 },{ 0, TERM19, 0, 0, 4 },{ 0, TERM18, 0, 0, 4 },{ 0, TERM09, 0, 0, 4 },{ 0, TERM17, 0, 0, 4 },{ 0, TERM10, 0, 0, 4 },{ 0, TERM16, 0, 0, 4 },{ 0, TERM11, 0, 0, 4 },{ 0, TERM15, 0, 0, 4 },{ 0, TERM12, 0, 0, 4 },{ 0, TERM14, 0, 0, 4 },{ 0, TERM13, 0, 0, 4 },{ 0, CARG05, 0, 0, 4 },{ 0, CARG06, 0, 0, 4 },{ 0, CARG04, 0, 0, 4 },{ 0, HELI04, 0, 0, 4 },{ 0, HELI03, 0, 0, 4 },
+// Airplane & Helicopter Hangars
+{ 0, HANGAR, 0, 0, 4 },{ 0, 0, 0, 0, 4 },{ 0, TERM06, 0, 0, 4 },{ 0, TERM07, 0, 0, 4 },{ 0, TERM08, 0, 0, 4 },{ 0, TERM19, 0, 0, 4 },{ 0, TERM18, 0, 0, 4 },{ 0, TERM09, 0, 0, 4 },{ 0, TERM17, 0, 0, 4 },{ 0, TERM10, 0, 0, 4 },{ 0, TERM16, 0, 0, 4 },{ 0, TERM11, 0, 0, 4 },{ 0, TERM15, 0, 0, 4 },{ 0, TERM12, 0, 0, 4 },{ 0, TERM14, 0, 0, 4 },{ 0, TERM13, 0, 0, 4 },{ 0, CARG05, 0, 0, 4 },{ 0, CARG06, 0, 0, 4 },{ 0, CARG04, 0, 0, 4 },{ 0, HELI04, 0, 0, 4 },{ 0, HELI03, 0, 0, 4 },
 { 1, HANGAR, 0, 0, 5 },{ 1, 0, 0, 0, 5 },{ 1, TERM21, 0, 0, 5 },{ 1, TERM20, 0, 0, 5 },{ 1, TERM19, 0, 0, 5 },{ 1, TERM08, 0, 0, 5 },{ 1, TERM18, 0, 0, 5 },{ 1, TERM09, 0, 0, 5 },{ 1, TERM17, 0, 0, 5 },{ 1, TERM10, 0, 0, 5 },{ 1, TERM16, 0, 0, 5 },{ 1, TERM11, 0, 0, 5 },{ 1, TERM15, 0, 0, 5 },{ 1, TERM12, 0, 0, 5 },{ 1, TERM14, 0, 0, 5 },{ 1, TERM13, 0, 0, 5 },{ 1, CARG02, 0, 0, 5 },{ 1, CARG01, 0, 0, 5 },{ 1, CARG03, 0, 0, 5 },{ 1, HELI03, 0, 0, 5 },
 { 2, HANGAR, 0, 0, 6 },{ 2, 0, 0, 0, 6 },{ 2, TERM06, 0, 0, 6 },{ 2, TERM05, 0, 0, 6 },{ 2, TERM04, 0, 0, 6 },{ 2, TERM03, 0, 0, 6 },{ 2, TERM02, 0, 0, 6 },{ 2, TERM01, 0, 0, 6 },{ 2, CARG06, 0, 0, 6 },{ 2, CARG05, 0, 0, 6 },{ 2, CARG04, 0, 0, 6 },{ 2, HELI04, 0, 0, 6 },
 { 3, HANGAR, 0, 0, 7 },{ 3, 0, 0, 0, 7 },{ 3, TERM21, 0, 0, 7 },{ 3, TERM22, 0, 0, 7 },{ 3, TERM23, 0, 0, 7 },{ 3, TERM24, 0, 0, 7 },{ 3, TERM25, 0, 0, 7 },{ 3, TERM26, 0, 0, 7 },{ 3, CARG01, 0, 0, 7 },{ 3, CARG02, 0, 0, 7 },{ 3, CARG03, 0, 0, 7 },{ 3, HELI03, 0, 0, 7 },
-{ 4, 255, HANG01_block, 0, 0 },{ 4, HANGAR, 0, 0, 0 },{ 4, HELITAKEOFF, 0, 0, 123 },{ 4, 0, 0, 0, 63 },
-{ 5, 255, HANG02_block, 0, 0 },{ 5, HANGAR, 0, 0, 1 },{ 5, 0, 0, 0, 93 },
+{ 4, 255, HANG01_block, 0, 0 },{ 4, HANGAR, 0, 0, 0 },{ 4, TERM06, 0, TAXI02_block | TAXI23_block, 63 },{ 4, TERM07, 0, TAXI02_block | TAXI03_block | TAXI22_block, 63 },{ 4, TERM08, 0, TAXI02_block | TAXI03_block | TAXI04_block | TAXI21_block, 63 },{ 4, TERM09, 0, TAXI18_block, 63 },{ 4, TERM10, 0, TAXI17_block, 63 },{ 4, TERM11, 0, TAXI16_block, 63 },{ 4, TERM12, 0, TAXI15_block, 63 },{ 4, HELITAKEOFF, 0, 0, 123 },{ 4, 0, 0, 0, 63 },
+{ 5, 255, HANG02_block, 0, 0 },{ 5, HANGAR, 0, 0, 1 },{ 5, TERM21, 0, TAXI32_block | TAXI37_block, 93 },{ 5, TERM20, 0, TAXI32_block | TAXI33_block | TAXI36_block, 93 },{ 5, TERM19, 0, TAXI32_block | TAXI33_block | TAXI34_block | TAXI35_block, 93 },{ 5, TERM09, 0, TAXI18_block, 93 },{ 5, TERM10, 0, TAXI17_block, 93 },{ 5, TERM11, 0, TAXI16_block, 93 },{ 5, TERM12, 0, TAXI15_block, 93 },{ 5, 0, 0, 0, 93 },
 { 6, 255, HANG03_block, 0, 0 },{ 6, HANGAR, 0, 0, 2 },{ 6, 0, 0, 0, 86 },
 { 7, 255, HANG04_block, 0, 0 },{ 7, HANGAR, 0, 0, 3 },{ 7, 0, 0, 0,100 },
 // Airplane Terminals
@@ -4149,11 +4149,11 @@ static const AirportFTAbuildup _airport_fta_indianapolis[] = {
 { 18, TERM11, TERM11_block, 0,  77 },{ 18, 0, 0, 0, 77 },
 { 19, TERM12, TERM12_block, 0,  76 },{ 19, 0, 0, 0, 76 },
 { 20, TERM13, TERM13_block, 0,  75 },{ 20, 0, 0, 0, 75 },
-{ 21, TERM14, TERM14_block, 0,  74 },{ 21, 0, 0, 0, 74 },
-{ 22, TERM15, TERM15_block, 0,  73 },{ 22, 0, 0, 0, 73 },
-{ 23, TERM16, TERM16_block, 0,  72 },{ 23, 0, 0, 0, 72 },
-{ 24, TERM17, TERM17_block, 0,  71 },{ 24, 0, 0, 0, 71 },
-{ 25, TERM18, TERM18_block, 0,  70 },{ 25, 0, 0, 0, 70 },
+{ 21, TERM14, TERM14_block, 0,  74 },{ 21, 0, 0, TAXI13_block | TAXI14_block, 74 },
+{ 22, TERM15, TERM15_block, 0,  73 },{ 22, 0, 0, TAXI12_block | TAXI15_block, 73 },
+{ 23, TERM16, TERM16_block, 0,  72 },{ 23, 0, 0, TAXI11_block | TAXI16_block, 72 },
+{ 24, TERM17, TERM17_block, 0,  71 },{ 24, 0, 0, TAXI10_block | TAXI17_block, 71 },
+{ 25, TERM18, TERM18_block, 0,  70 },{ 25, 0, 0, TAXI09_block | TAXI18_block, 70 },
 { 26, TERM19, TERM19_block, 0,  68 },{ 26, 0, 0, 0, 68 },
 { 27, TERM20, TERM20_block, 0,  97 },{ 27, 0, 0, 0, 97 },
 { 28, TERM21, TERM21_block, 0,  99 },{ 28, 0, 0, 0, 99 },
@@ -4163,12 +4163,12 @@ static const AirportFTAbuildup _airport_fta_indianapolis[] = {
 { 32, TERM25, TERM25_block, 0, 101 },{ 32, HANGAR, HANG04_block, TAXI40_block | TAXI39_block, 101 },{ 32, 0, 0, 0, 101 },
 { 33, TERM26, TERM26_block, 0, 100 },{ 33, HANGAR, HANG04_block, TAXI39_block, 100 },{ 33, 0, 0, 0, 100 },
 // Cargo Terminals (Uses Helipads.)
-{ 34, CARG01, CARG01_block, 0,  94 },{ 34, HANGAR, 0, TAXI33_block | TAXI36_block, 94 },{ 34, 0, 0, 0, 94 },
-{ 35, CARG02, CARG02_block, 0,  95 },{ 35, HANGAR, 0, TAXI34_block | TAXI35_block, 95 },{ 35, 0, 0, 0, 95 },
+{ 34, CARG01, CARG01_block, 0,  94 },{ 34, HANGAR, 0, TAXI33_block | TAXI36_block, 94 },{ 34, TAKEOFF, 0, TAXI33_block | TAXI36_block, 94 },{ 34, 0, 0, 0, 94 },
+{ 35, CARG02, CARG02_block, 0,  95 },{ 35, HANGAR, 0, TAXI34_block | TAXI35_block, 95 },{ 35, TAKEOFF, 0, TAXI34_block | TAXI35_block, 95 },{ 35, 0, 0, 0, 95 },
 { 36, CARG03, CARG03_block, 0,  67 },{ 36, 0, 0, 0, 67 },
-{ 37, CARG04, CARG04_block, 0,  66 },{ 37, HANGAR, 0, TAXI05_block | TAXI20_block, 66 },{ 37, 0, 0, 0, 66 },
-{ 38, CARG05, CARG05_block, 0,  65 },{ 38, HANGAR, 0, TAXI04_block | TAXI21_block, 65 },{ 38, 0, 0, 0, 65 },
-{ 39, CARG06, CARG06_block, 0,  64 },{ 39, HANGAR, 0, TAXI03_block | TAXI22_block, 64 },{ 39, 0, 0, 0, 64 },
+{ 37, CARG04, CARG04_block, 0,  66 },{ 37, HANGAR, 0, TAXI05_block | TAXI20_block, 66 },{ 37, TAKEOFF, 0, TAXI05_block | TAXI20_block, 66 },{ 37, 0, 0, 0, 66 },
+{ 38, CARG05, CARG05_block, 0,  65 },{ 38, HANGAR, 0, TAXI04_block | TAXI21_block, 65 },{ 38, TAKEOFF, 0, TAXI04_block | TAXI21_block, 65 },{ 38, 0, 0, 0, 65 },
+{ 39, CARG06, CARG06_block, 0,  64 },{ 39, HANGAR, 0, TAXI03_block | TAXI22_block, 64 },{ 39, TAKEOFF, 0, TAXI03_block | TAXI22_block, 64 },{ 39, 0, 0, 0, 64 },
 // Helicopter Terminals
 { 40, HELI03, HELI03_block, 0,  56 },{ 40, HANGAR, 0, 0, 67 },{ 40, HELITAKEOFF, 0, 0, 124 },
 { 41, HELI04, HELI04_block, 0,  57 },{ 41, HANGAR, 0, 0, 66 },{ 41, HELITAKEOFF, 0, 0, 125 },
@@ -4199,7 +4199,7 @@ static const AirportFTAbuildup _airport_fta_indianapolis[] = {
 { 60, LANDING, 0, 0, 61 },{ 60, FLYING, 0, 0, 113 },{ 60, 0, 0, 0, 61 },
 { 61, ENDLANDING, 0, TAXI48_block,  7 },{ 61, 0, 0, 0,  7 },{ 61, TERM21, 0, 0, 0 },{ 61, TERM23, 0, 0, 0 },{ 61, TERM25, 0, 0, 0 },{ 61, TERM22, 0, 0, 0 },{ 61, TERM24, 0, 0, 0 },{ 61, TERM26, 0, 0, 0 },{ 61, CARG02, 0, 0, 0 },{ 61, CARG01, 0, 0, 0 },{ 61, CARG03, 0, 0, 0 },
 // Airplane Taxi  (Main Airport flow)
-{ 62,      0, 0, TAXI01_block,  4 },
+{ 62,    255, 0, TAXI01_block,  4 },{ 62, TERM06, HANG01_block, TAXI02_block | TAXI23_block, 4 },{ 62, TERM07, HANG01_block, TAXI02_block | TAXI03_block | TAXI22_block, 4 },{ 62, TERM08, HANG01_block, TAXI02_block | TAXI03_block | TAXI04_block | TAXI21_block, 4 },{ 62,      0, 0, TAXI01_block,  4 },
 { 63,    255, 0, TAXI02_block,  0 },{ 63, TERM06, 0, 0, 84 },{ 63, 0, 0, 0, 64 },
 { 64,    255, 0, TAXI03_block,  0 },{ 64, CARG06, 0, 0, 39 },{ 64, TERM07, 0, 0, 83 },{ 64, HANGAR, 0, 0, 83 },{ 64, TAKEOFF, 0, 0, 83 },{ 64, 0, 0, 0, 65 },
 { 65,    255, 0, TAXI04_block,  0 },{ 65, CARG05, 0, 0, 38 },{ 65, TERM08, 0, 0, 82 },{ 65, HANGAR, 0, 0, 82 },{ 65, TAKEOFF, 0, 0, 82 },{ 65, 0, 0, 0, 66 },
@@ -4229,7 +4229,7 @@ static const AirportFTAbuildup _airport_fta_indianapolis[] = {
 { 89, BACKUP, 0, TAXI28_block,  0 },{ 89, TERM04, 0, 0, 11 },{ 89, 0, 0, 0, 90 },
 { 90, BACKUP, 0, TAXI29_block,  0 },{ 90, TERM05, 0, 0, 12 },{ 90, 0, 0, 0, 91 },
 { 91,    255, 0, TAXI30_block,  0 },{ 91, TERM06, 0, 0, 13 },{ 91, 0, 0, 0, 85 },
-{ 92,      0, 0, TAXI31_block,  5 },
+{ 92,    255, 0, TAXI31_block,  5 },{ 92, TERM21, HANG02_block, TAXI32_block | TAXI37_block, 5 },{ 92, TERM20, HANG02_block, TAXI32_block | TAXI33_block | TAXI36_block, 5 },{ 92, TERM19, HANG02_block, TAXI32_block | TAXI33_block | TAXI34_block | TAXI35_block, 5 }, { 92,      0, 0, TAXI31_block,  5 },
 { 93,    255, 0, TAXI32_block,  0 },{ 93, TERM21, 0, 0, 98 },{ 93, 0, 0, 0, 94 },
 { 94,    255, 0, TAXI33_block,  0 },{ 94, CARG01, 0, 0, 34 },{ 94, TERM20, 0, 0, 97 },{ 94, HANGAR, 0, 0, 97 },{ 94, TAKEOFF, 0, 0, 97 },{ 94, 0, 0, 0, 95 },
 { 95,    255, 0, TAXI34_block,  0 },{ 95, CARG02, 0, 0, 35 },{ 95, TERM19, 0, 0, 96 },{ 95, HANGAR, 0, 0, 96 },{ 95, TAKEOFF, 0, 0, 96 },{ 95, 0, 0, 0, 67 },
@@ -4248,12 +4248,12 @@ static const AirportFTAbuildup _airport_fta_indianapolis[] = {
 { 107, 0, 0, 0, 108 },
 { 108, STARTTAKEOFF, 0, 0, 109 },
 { 109, ENDTAKEOFF, 0, 0, 0 },{ 109, 0, 0, 0, 42 },   // End Airport control of airplane.
-													 // Airplane Takeoff - Runway 04
+// Airplane Takeoff - Runway 04
 { 110, TAKEOFF, RUNW04_block, 0, 111 },
 { 111, 0, 0, 0, 112 },
 { 112, STARTTAKEOFF, 0, 0, 113 },
 { 113, ENDTAKEOFF, 0, 0, 0 },{ 113, 0, 0, 0, 42 },   // End Airport control of airplane.
-													 // Helicopter -- Entry .  Keeps it from messing up the planes.
+// Helicopter -- Entry .  Keeps it from messing up the planes.
 { 114, FLYING, 0, 0, 114 },{ 114, HELILANDING, 0, 0, 115 },
 // Helicopter -- Holding Pattern
 { 115, HELILANDING, 0, 0, 116 },{ 115, 0, 0, 0, 116 },
@@ -4271,7 +4271,7 @@ static const AirportFTAbuildup _airport_fta_indianapolis[] = {
 { 123, HELITAKEOFF, 0, 0, 0 },  // Hangar01
 { 124, HELITAKEOFF, 0, 0, 0 },  // Helipad03
 { 125, HELITAKEOFF, 0, 0, 0 },  // Helipad04
-								// Aborted landings for Runway 1 and Runway 3
+// Aborted landings for Runway 1 and Runway 3
 { 126, 0, 0, 0, 44 },
 { 127, 0, 0, 0, 44 },
 { MAX_ELEMENTS, 0, 0, 0, 0 } // end marker. DO NOT REMOVE
@@ -4288,8 +4288,8 @@ static const byte _airport_terminal_schiphol[] = { 1, 12 };
 static const byte _airport_entries_schiphol[] = { 25, 24, 27, 26 };
 static const byte _airport_helientry_schiphol[] = { 94, 94, 94, 94 };
 static const AirportFTAbuildup _airport_fta_schiphol[] = {
-	// Airplane & Helicopter Hangars
-	{ 0, HANGAR, 0, 0, 3 },{ 0, 0, 0, 0, 3 },{ 0, TERM12, 0, 0, 3 },{ 0, TERM10, 0, 0, 3 },{ 0, TERM08, 0, 0, 3 },{ 0, TERM06, 0, 0, 3 },{ 0, TERM04, 0, 0, 3 },{ 0, TERM02, 0, 0, 3 },{ 0, TERM11, 0, 0, 3 },{ 0, TERM09, 0, 0, 3 },{ 0, TERM07, 0, 0, 3 },{ 0, TERM05, 0, 0, 3 },{ 0, TERM03, 0, 0, 3 },{ 0, TERM01, 0, 0, 3 },{ 0, CARG04, 0, 0, 3 },{ 0, CARG02, 0, 0, 3 },{ 0, CARG03, 0, 0, 3 },{ 0, CARG01, 0, 0, 3 },{ 0, HELI02, 0, 0, 3 },{ 0, HELI01, 0, 0, 3 },
+// Airplane & Helicopter Hangars
+{ 0, HANGAR, 0, 0, 3 },{ 0, 0, 0, 0, 3 },{ 0, TERM12, 0, 0, 3 },{ 0, TERM10, 0, 0, 3 },{ 0, TERM08, 0, 0, 3 },{ 0, TERM06, 0, 0, 3 },{ 0, TERM04, 0, 0, 3 },{ 0, TERM02, 0, 0, 3 },{ 0, TERM11, 0, 0, 3 },{ 0, TERM09, 0, 0, 3 },{ 0, TERM07, 0, 0, 3 },{ 0, TERM05, 0, 0, 3 },{ 0, TERM03, 0, 0, 3 },{ 0, TERM01, 0, 0, 3 },{ 0, CARG04, 0, 0, 3 },{ 0, CARG02, 0, 0, 3 },{ 0, CARG03, 0, 0, 3 },{ 0, CARG01, 0, 0, 3 },{ 0, HELI02, 0, 0, 3 },{ 0, HELI01, 0, 0, 3 },
 { 1, HANGAR, 0, 0, 4 },{ 1, 0, 0, 0, 4 },{ 1, TERM05, 0, 0, 4 },{ 1, TERM06, 0, 0, 4 },{ 1, TERM07, 0, 0, 4 },{ 1, TERM08, 0, 0, 4 },{ 1, TERM12, 0, 0, 4 },{ 1, TERM10, 0, 0, 4 },{ 1, TERM11, 0, 0, 4 },{ 1, TERM09, 0, 0, 4 },
 { 2, HANGAR, 0, 0, 5 },{ 2, 0, 0, 0, 5 },{ 2, CARG04, 0, 0, 5 },{ 2, CARG02, 0, 0, 5 },{ 2, CARG03, 0, 0, 5 },{ 2, CARG01, 0, 0, 5 },{ 2, HELI02, 0, 0, 5 },{ 2, HELI01, 0, 0, 5 },
 { 3, 255, HANG01_block, 0, 0 },{ 3, HANGAR, 0, 0, 0 },{ 3, 0, 0, 0, 49 },
@@ -4381,18 +4381,18 @@ static const AirportFTAbuildup _airport_fta_schiphol[] = {
 { 79, 0, 0, 0, 80 }, // Unused
 { 80, STARTTAKEOFF, 0, 0, 81 },
 { 81, ENDTAKEOFF, 0, 0, 0 },   // End Airport control of airplane.
-							   // Airplane Takeoff - Runway 04
+// Airplane Takeoff - Runway 04
 { 82, TAKEOFF, RUNW04_block, 0, 83 },
 { 83, 0, 0, 0, 84 },
 { 84, STARTTAKEOFF, 0, 0, 85 },
 { 85, ENDTAKEOFF, 0, 0, 0 },   // End Airport control of airplane.
-							   // Airplane Takeoff - Runway 06
+// Airplane Takeoff - Runway 06
 { 86,      0, 0, TAXI38_block, 87 },
 { 87, TAKEOFF, RUNW06_block | RUNW02_block, 0, 89 },
 { 88, 0, 0, 0, 89 },  // Unused
 { 89, STARTTAKEOFF, 0, 0, 90 },
 { 90, ENDTAKEOFF, 0, 0, 0 },   // End Airport control of airplane.
-							   // Aborted landings for Runway 2, 3, 5
+// Aborted landings for Runway 2, 3, 5
 { 91, 0, 0, 0, 26 },
 { 92, 0, 0, 0, 25 },
 { 93, 0, 0, 0, 27 },
@@ -4424,7 +4424,7 @@ static const TerminalTileTable _airport_terminals_heliport[] = { { { 0, 0 }, HEL
 static const RunwayTerminalTable _airport_runways_heliport[] = { { 0, 0, 0 } };      // 0 = no runways.
 static const byte _airport_helientry_heliport[] = { 7, 7, 7, 7 };
 static const AirportFTAbuildup _airport_fta_heliport[] = {
-	{ 0, HELI01, HELI01_block, 0, 1 },
+{ 0, HELI01, HELI01_block, 0, 1 },
 { 1, HELITAKEOFF, 0, 0, 0 }, // takeoff
 { 2, 255, 0, 0, 0 },{ 2, HELILANDING, 0, 0, 3 },{ 2, HELITAKEOFF, 0, 0, 1 },
 { 3, HELILANDING, 0, 0, 4 },{ 3, HELIENDLANDING, 0, 0, 4 },{ 3, 0, 0, 0, 5 },
@@ -4448,7 +4448,7 @@ static const RunwayTerminalTable _airport_runways_helidepot[] = { { 0, 0, 0 } };
 static const byte _airport_entries_helidepot[] = { 4, 4, 4, 4 };
 static const byte _airport_helientry_helidepot[] = { 4, 4, 4, 4 };
 static const AirportFTAbuildup _airport_fta_helidepot[] = {
-	{ 0, HANGAR, 0, 0, 1 },{ 0, 0, 0, 0, 1 },{ 0, HELI01, 0, 0, 14 },{ 0, HELITAKEOFF, 0, 0, 15 },
+{ 0, HANGAR, 0, 0, 1 },{ 0, 0, 0, 0, 1 },{ 0, HELI01, 0, 0, 14 },{ 0, HELITAKEOFF, 0, 0, 15 },
 { 1, 255, HANG02_block, 0, 0 },{ 1, HANGAR, 0, 0, 0 },{ 1, HELI01, 0, 0, 2 },{ 1, HELITAKEOFF, 0, 0, 15 },{ 1, 0, 0, 0, 0 },
 // Helipad Terminal
 { 2, HELI01, HELI01_block, 0, 12 },{ 2, HANGAR, 0, 0, 1 },{ 2, HELITAKEOFF, 0, 0, 12 },{ 2, 0, 0, 0, 12 },
@@ -4483,7 +4483,7 @@ static const RunwayTerminalTable _airport_runways_helistation[] = { { 0, 0, 0 } 
 static const byte _airport_entries_helistation[] = { 25, 25, 25, 25 };
 static const byte _airport_helientry_helistation[] = { 25, 25, 25, 25 };
 static const AirportFTAbuildup _airport_fta_helistation[] = {
-	{ 0, HANGAR, 0, 0, 0 },{ 0, HELI01, 0, TAXI01_block, 1 },{ 0, HELI02, 0, TAXI01_block, 1 },{ 0, HELI03, 0, TAXI01_block, 1 },{ 0, HELITAKEOFF, 0, 0, 1 },{ 0, 0, 0, 0, 1 },
+{ 0, HANGAR, 0, 0, 0 },{ 0, HELI01, 0, TAXI01_block, 1 },{ 0, HELI02, 0, TAXI01_block, 1 },{ 0, HELI03, 0, TAXI01_block, 1 },{ 0, HELITAKEOFF, 0, 0, 1 },{ 0, 0, 0, 0, 1 },
 { 1, 255, HANG02_block, 0, 0 },{ 1, HANGAR, 0, 0, 0 },{ 1, HELITAKEOFF, 0, 0, 3 },{ 1, 0, 0, 0, 4 },
 /* landing */
 { 2, FLYING, NOTHING_block, 0, 28 },{ 2, HELILANDING, 0, 0, 15 },{ 2, 0, 0, 0, 28 },
