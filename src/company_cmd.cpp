@@ -556,7 +556,6 @@ Company *DoStartupNewCompany(bool is_ai, CompanyID company = INVALID_COMPANY)
 
 	ResetCompanyLivery(c);
 	_company_colours[c->index] = (Colours)c->colour;
-	_company_colours[OWNER_TOWN] = COLOUR_GREY;
 
 	c->money = c->current_loan = (100000ll * _economy.inflation_prices >> 16) / 50000 * 50000;
 

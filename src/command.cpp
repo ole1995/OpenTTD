@@ -359,8 +359,8 @@ static const Command _command_proc_table[] = {
 	DEF_CMD(CmdSetTimetableStart,                              0, CMDT_ROUTE_MANAGEMENT      ), // CMD_SET_TIMETABLE_START
 
 	DEF_CMD(CmdOpenCloseAirport,                               0, CMDT_ROUTE_MANAGEMENT      ), // CMD_OPEN_CLOSE_AIRPORT
-	DEF_CMD(CmdTerminalChangeOwner,							   0, CMDT_ROUTE_MANAGEMENT		 ), // CMD_TERMINAL_CHANGE_OWNER
-	DEF_CMD(CmdTerminalChangeFullLoad,						   0, CMDT_ROUTE_MANAGEMENT		 ), // CMD_TERMINAL_CHANGE_FULLLOAD
+	DEF_CMD(CmdTerminalChangeOwner,							   0, CMDT_OTHER_MANAGEMENT      ), // CMD_TERMINAL_CHANGE_OWNER
+	DEF_CMD(CmdTerminalChangeFullLoad,						   0, CMDT_OTHER_MANAGEMENT      ), // CMD_TERMINAL_CHANGE_FULLLOAD
 	DEF_CMD(CmdResetAirport,								   0, CMDT_ROUTE_MANAGEMENT		 ), // CMD_RESET_AIRPORT
 };
 
